@@ -2,29 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона: фотографии</title>
+    <title>Седона: фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__logo"><img src="http://placehold.it/102x83?text=Sedona" alt="City of Sedona"></div>
+    <header class="page-header common__container">
       <nav class="page-menu page-menu--mobile">
         <div class="page-menu__wrapper">
           <div class="page-menu__btn page-menu__btn--close"></div>
-          <ul class="page-menu__items">
-            <li class="page-menu__item"><a class="page-menu__item-link" href="index.html">Главная</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link">Фото и видео</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link" href="form.html">Форма отзыва</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link" href="https://htmlacademy.ru">HTML Academy</a></li>
+          <ul class="page-menu__list">
+            <li class="page-menu__item"><a class="page-menu__item-link common__btn" href="index.html">Главная</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link common__btn">Фото и видео</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link common__btn" href="form.html">Форма отзыва</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link common__btn" href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </div>
-        <div class="page-menu__btn page-menu__btn--toggle"></div>
       </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo"><img src="img/logo-sedona-mobile.svg" alt="City of Sedona"></div>
+        <div class="page-menu__btn page-menu__btn--toggle"></div>
+      </div>
     </header>
 
-    <div class="intro">
-      <div class="intro-greeting intro-greeting--small">
-        <p class="intro-greeting__text">Sedona</p>
-      </div>
+    <div class="common__container">
+      <section class="intro">
+        <img src="img/text-sedona.svg" width="230" height="40" alt="Sedona">
+      </section>
     </div>
 
     <section class="page-description">
@@ -38,53 +41,53 @@
 
     <section class="photos">
       <article class="photo-item common__container">
-        <div class="photo-item__img"><img src="http://placehold.it/280" alt=""></div>
-        <h3 class="common__title common__title--small photo-item__title">Народные просторы</h3>
-        <p class="photo-item__author">Автор фото: <span class="photo-item__author-name">Борис</span></p>
+        <div class="photo-item__img"><img src="img/photo-1-mobile@1x.jpg" alt=""></div>
+        <h3 class="common__title common__title--small photo-item__title">Неродные просторы</h3>
+        <p class="common__text photo-item__author">Автор фото: <span class="photo-item__author-name">Борис</span></p>
         <div class="photo-item__votes">
           <span class="photo-item__vote-icon"></span>
-          <span class="photo-item__vote-score">1550</span>
+          <span class="common__title common__title--small photo-item__vote-score">1350</span>
         </div>
       </article>
       <article class="photo-item common__container">
-        <div class="photo-item__img"><img src="http://placehold.it/280" alt=""></div>
+        <div class="photo-item__img"><img src="img/photo-2-mobile@1x.jpg" alt=""></div>
         <h3 class="common__title common__title--small photo-item__title">Местная растительность</h3>
-        <p class="photo-item__author">Автор фото: <span class="photo-item__author-name">Сергей</span></p>
+        <p class="common__text photo-item__author">Автор фото: <span class="photo-item__author-name">Сергей</span></p>
         <div class="photo-item__votes">
           <span class="photo-item__vote-icon"></span>
-          <span class="photo-item__vote-score">143</span>
+          <span class="common__title common__title--small photo-item__vote-score">143</span>
         </div>
       </article>
       <article class="photo-item common__container">
-        <div class="photo-item__img"><img src="http://placehold.it/280" alt=""></div>
+        <div class="photo-item__img"><img src="img/photo-3-mobile@1x.jpg" alt=""></div>
         <h3 class="common__title common__title--small photo-item__title">Дорога на север</h3>
-        <p class="photo-item__author">Автор фото: <span class="photo-item__author-name">Петр</span></p>
+        <p class="common__text photo-item__author">Автор фото: <span class="photo-item__author-name">Петр</span></p>
         <div class="photo-item__votes">
           <span class="photo-item__vote-icon"></span>
-          <span class="photo-item__vote-score">96</span>
+          <span class="common__title common__title--small photo-item__vote-score">96</span>
         </div>
       </article>
       <article class="photo-item common__container">
-        <div class="photo-item__img"><img src="http://placehold.it/280" alt=""></div>
+        <div class="photo-item__img"><img src="img/photo-4-mobile@1x.jpg" alt=""></div>
         <h3 class="common__title common__title--small photo-item__title">Мост Дьявола</h3>
-        <p class="photo-item__author">Автор фото: <span class="photo-item__author-name">Антон</span></p>
+        <p class="common__text photo-item__author">Автор фото: <span class="photo-item__author-name">Антон</span></p>
         <div class="photo-item__votes">
           <span class="photo-item__vote-icon"></span>
-          <span class="photo-item__vote-score">254</span>
+          <span class="common__title common__title--small photo-item__vote-score">254</span>
         </div>
       </article>
     </section>
 
     <section class="video">
-      <div class="common__container">
+      <div class="common__container video__desc">
         <h2 class="common__title common__title--big video__title">Все еще сомневаетесь?</h2>
         <p class="common__text video__text">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </div>
-      <div class="video-player">
-        <div class="video-player__frame video-player__frame--mobile"><img src="http://placehold.it/320x200" alt=""></div>
-        <div class="video-player__controls common__container">
+      <div class="video-player common__container">
+        <div class="video-player__frame video-player__frame--mobile"><img src="img/video-mobile@1x.jpg" alt=""></div>
+        <div class="video-player__controls">
           <div class="video-player__volume-slider">
             <div class="video-player__volume-slider-bar"></div>
             <div class="video-player__volume-slider-knob"></div>
