@@ -3,15 +3,7 @@
 @mixin theme-text {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-
 }
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-
 
 .common__title {
   @include theme-text;
@@ -67,4 +59,3 @@ a.common__text {
     width: 180px;
   }
 }
-
