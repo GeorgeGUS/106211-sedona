@@ -19,13 +19,13 @@
   background-repeat: no-repeat;
 
   &--tw {
-    background-image: url("/img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
   &--fb {
-    background-image: url("/img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
   &--yt {
-    background-image: url("/img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }
 }
 
@@ -39,7 +39,7 @@
   height: 50px;
   width: 50px;
   vertical-align: middle;
-  background-image: url("/img/htmlacademy.svg");
+  background-image: url("../img/htmlacademy.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }

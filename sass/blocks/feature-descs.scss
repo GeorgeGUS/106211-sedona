@@ -1,0 +1,33 @@
+.feature-descs {
+  padding: 20px 20px 30px 70px;
+  text-align: left;
+  background-color: #eeeeee;
+}
+
+.feature-desc__item-title {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--house::before {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/icon-burger.svg");
+  }
+}
