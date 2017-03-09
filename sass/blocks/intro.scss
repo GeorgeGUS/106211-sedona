@@ -1,0 +1,17 @@
+.intro {
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
+  height: 160px;
+  background-image:
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+
+  &--big {
+    padding-top: 90px;
+    height: 390px;
+  }
+}

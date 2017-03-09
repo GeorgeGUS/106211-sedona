@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+@mixin theme-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.common__title {
+  @include theme-text;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+
+  &--big {
+    font-size: 21px;
+  }
+
+  &--small {
+    font-size: 14px;
+  }
+
+  &--thin {
+    font-weight: normal;
+  }
+}
+
+.common__text {
+  @include theme-text;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+a.common__title,
+a.common__text {
+  text-decoration: none;
+  color: black;
+}
+
+.common__btn {
+  display: block;
+  padding: 20px;
+  @include theme-text;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: white;
+  background: $theme-main-color;
+  border: none;
+
+  &--social {
+    display: inline-block;
+    padding: 0;
+    font-size: 0;
+  }
+
+  &--narrow {
+    margin: 0 auto;
+    width: 180px;
+  }
+}

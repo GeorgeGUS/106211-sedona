@@ -1,0 +1,31 @@
+@import "global/normalize.scss";
+/* USER STYLES
+   ========================================================================== */
+
+/*________global_________*/
+@import "global/fonts.scss";
+@import "global/common.scss";
+@import "global/grids.scss";
+@import "global/variables.scss";
+
+/*_________blocks_________*/
+
+//----common for all pages----
+@import "blocks/page-header.scss";
+@import "blocks/page-menu.scss";
+@import "blocks/page-description.scss";
+@import "blocks/intro.scss";
+@import "blocks/page-footer.scss";
+
+//----------index------------
+@import "blocks/features.scss";
+@import "blocks/feature-descs.scss";
+@import "blocks/contacts.scss";
+
+//----------photo------------
+@import "blocks/photos.scss";
+@import "blocks/video.scss";
+
+//----------form-------------
+@import "blocks/feedback-form.scss";
+@import "blocks/popups.scss";

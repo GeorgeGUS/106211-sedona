@@ -1,0 +1,17 @@
+.popup {
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.popup__error-wrapper {
+  padding: 30px 45px;
+}
+
+.popup__message-wrapper {
+  padding: 30px 40px;
+}
+
+.popup-success__btn-wrapper {
+  padding: 20px;
+  background-color: #f2f2f2;
+}

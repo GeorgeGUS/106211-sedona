@@ -1,0 +1,11 @@
+.common__container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  width: 320px;
+  text-align: center;
+
+  &--align-left {
+    text-align: left;
+  }
+}
