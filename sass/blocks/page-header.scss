@@ -1,22 +1,23 @@
+.page-header {
+  position: relative;
+  @include container;
+  text-align: center;
+  background-color: white;
+}
+
 .page-header__wrapper {
   position: relative;
   min-height: 55px;
 }
 
-.page-menu {
-  position: relative;
-  //display: none;
-}
-
-.page-menu__wrapper {
-  //position: relative;
-}
-
 .page-header__logo {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   min-height: 55px;
-  z-index: 100;
+  z-index: 10;
+}
+
+.page-header__wrapper {
+  position: relative;
 }

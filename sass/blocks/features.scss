@@ -15,28 +15,29 @@ section.feature {
   padding: 15px 10px;
   box-sizing: border-box;
   border-bottom: 1px solid #d6d6d6;
-}
 
-section.feature:last-of-type .feature__preview-wrapper {
-  border-bottom: none;
-}
+  section.feature:last-of-type & {
+    border-bottom: none;
+  }
 
-.feature--active .feature__preview-wrapper {
-  color: white;
-  border-bottom: none;
+  .feature--active & {
+    color: white;
+    border-bottom: none;
+  }
 }
 
 .feature__image {
-  height: 260px;
-  display: none;
-  overflow: hidden;
-}
+  @include bg-img-center-cover;
 
-.feature__image img {
-  margin: 0 -50%;
-  display: inline-block;
-}
+  .feature--active & {
+    height: 260px;
+  }
 
-.feature--active .feature__image {
-  display: block;
+  &--city {
+    background-image: url("../img/photo-city@1x.jpg");
+  }
+
+  &--bridge {
+    background-image: url("../img/photo-bridge@1x.jpg");
+  }
 }
