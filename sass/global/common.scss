@@ -1,13 +1,14 @@
+.common__text-wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 .common__title {
   @include theme-text;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-decoration: none;
-
-  &--big {
-    font-size: 21px;
-  }
 
   &--small {
     font-size: 14px;
@@ -35,6 +36,7 @@ a.common__text {
   padding: 20px;
   @include theme-text;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   text-decoration: none;
   color: white;
@@ -50,5 +52,11 @@ a.common__text {
   &--narrow {
     margin: 0 auto;
     width: 180px;
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .common__title {
+    font-size: 21px;
   }
 }

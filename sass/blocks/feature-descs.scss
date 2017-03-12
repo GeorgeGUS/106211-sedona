@@ -1,7 +1,9 @@
 .feature-descs {
+  @include container;
   padding: 20px 20px 30px 70px;
   text-align: left;
-  background-color: #eeeeee;
+  box-sizing: border-box;
+  background-color: white;
 }
 
 .feature-desc__item-title {
@@ -14,9 +16,6 @@
     top: -10px;
     width: 40px;
     height: 40px;
-    //background-size: contain;
-    //background-repeat: no-repeat;
-    //background-position: center center;
     @include bg-img-center-contain;
   }
 
@@ -30,5 +29,32 @@
 
   &--food::before {
     background-image: url("../img/icon-burger.svg");
+  }
+}
+
+@media #{$breakpoint-tablet} {
+  .feature-descs {
+    display: flex;
+    padding: 0;
+    height: 330px;
+    text-align: center;
+  }
+
+  .feature-desc__item {
+    flex-grow: 1;
+    width: 100%;
+    padding: 135px 45px 0;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+
+  .feature-desc__item-title::before {
+    left: 50%;
+    top: -100px;
+    width: 75px;
+    height: 75px;
+    transform: translateX(-50%);
   }
 }

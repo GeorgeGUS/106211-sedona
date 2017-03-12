@@ -1,10 +1,35 @@
+.contacts {
+  @include container;
+  background-color: white;
+}
+
 .contacts__wrapper {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: white;
 }
 
 .contacts__btn {
   margin-top: 35px;
   margin-bottom: 50px;
+}
+
+.contacts__map {
+  height: 350px;
+  @include bg-img-center-contain;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+}
+
+.contacts__map-pin {
+  height: 100%;
+  @include bg-img-center-contain;
+  background-image: url("../img/icon-map-marker.svg");
+  background-size: 27px;
+}
+
+@media #{$breakpoint-tablet} {
+  .contacts__title {
+    font-size: 30px;
+  }
 }
