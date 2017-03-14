@@ -1,4 +1,6 @@
-@import "../global/fonts.scss";
+.photos {
+  @include container;
+}
 
 .photo-item {
   padding: 20px;
@@ -12,10 +14,124 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+
 .photo-item__img img {
+  height: 100%;
   vertical-align: bottom;
 }
 
 .photo-item__author {
   text-transform: none;
+}
+
+.photo-item__vote-icon {
+  display: inline-block;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  @include bg-img-center-contain;
+  background-image: url("../img/icon-like.svg");
+}
+
+.photo-item__vote-score {
+  vertical-align: middle;
+}
+
+/*
+______________________ Планшетная версия ______________________
+*/
+
+@media #{$breakpoint-tablet} {
+  .photos {
+    padding: 20px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-item {
+    padding: 0;
+    width: 50%;
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
+
+    &--big {
+      width: 100%;
+    }
+  }
+
+  .photo-item--big .photo-item__img {
+    height: 400px;
+  }
+
+  .photo-item__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+  }
+
+  .photo-item:nth-last-child(2n):not(:first-child) .photo-item__bottom-wrapper {
+    background-color: #eaeaea;
+  }
+
+  .photo-item__title,
+  .photo-item__author,
+  .photo-item__vote-score {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .photo-item__votes {
+    width: 70px;
+  }
+}
+
+/*
+______________________ Десктопная версия ______________________
+*/
+
+@media #{$breakpoint-desktop} {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .photo-item {
+    position: relative;
+    height: 270px;
+    width: 100% * 1/3;
+
+    &--big {
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  .photo-item__img {
+    height: 100%;
+  }
+
+  .photo-item__bottom-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-item:nth-last-child(2n):not(:first-child) .photo-item__bottom-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

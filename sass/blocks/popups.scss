@@ -1,18 +1,22 @@
 .popup {
+  @include container;
   //position: fixed;
   //top: 50%;
   //left: 50%;
   //transform: translate(-50%, -50%);
+  box-sizing: border-box;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
   background-color: white;
   z-index:999;
 
   &--error {
+    width: 320px;
     padding: 30px 45px;
   }
 }
 
 .popup__message-wrapper {
+
   padding: 30px;
 }
 

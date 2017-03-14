@@ -28,23 +28,18 @@
       </div>
     </header>
 
-    <div class="common__container">
-      <section class="intro">
-        <div class="intro__logo"><img src="img/text-sedona.svg" width="230" height="40" alt="Sedona"></div>
-      </section>
+    <section class="intro">
+      <div class="intro__logo"><img src="img/text-sedona.svg" width="230" height="40" alt="Sedona"></div>
+    </section>
 
-    </div>
+    <section class="page-description">
+      <h2 class="common__title common__title--big page-description__title">Оставьте свой отзыв</h2>
+      <p class="common__text page-description__text">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </section>
 
-    <div class="common__container">
-      <section class="page-description">
-        <h2 class="common__title common__title--big page-description__title">Оставьте свой отзыв</h2>
-        <p class="common__text page-description__text">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
-      </section>
-    </div>
-
-    <form class="feedback-form common__container" action="http://echo.htmlacademy.ru" method="post">
+    <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Представьтесь:</h3>
         <p class="form-section__line">
@@ -121,12 +116,10 @@
           <textarea class="form-section__textarea" name="emotions" cols="27" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </p>
       </fieldset>
-      <div class="common__container">
-        <button class="common__btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
-      </div>
+      <button class="common__btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
     </form>
 
-    <footer class="page-footer common__container">
+    <footer class="page-footer">
       <section class="page-footer__hashtag">
         <a class="common__title common__title--big page-footer__hashtag-link" href="#">#visitsedona</a>
       </section>
@@ -143,29 +136,25 @@
     </footer>
 
     <!-------------------------------------- POPUPS -------------------------------------->
-    <div class="common__container">
-      <article class="popup popup--error">
-        <h2 class="common__title popup__title">Что-то пошло не так!</h2>
-        <p class="common__text popup__text">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
-        <a class="common__btn common__btn--narrow popup__btn-ok" href="#">Ок</a>
-      </article>
-    </div>
+    <article class="popup popup--error">
+      <h2 class="common__title popup__title">Что-то пошло не так!</h2>
+      <p class="common__text popup__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <a class="common__btn common__btn--narrow popup__btn-ok" href="#">Ок</a>
+    </article>
 
-    <div class="common__container">
-      <article class="popup popup--success">
-        <div class="popup__message-wrapper">
-          <h2 class="common__title popup__title">Ваш отзыв отправлен!</h2>
-          <p class="common__text popup__text">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
-            В ближайшее время мы опубликуем его на сайте.
-          </p>
-        </div>
-        <div class="popup-success__btn-wrapper">
-          <a class="common__btn popup__btn" href="#">Закрыть окно</a>
-        </div>
-      </article>
-    </div>
+    <article class="popup popup--success">
+      <div class="popup__message-wrapper">
+        <h2 class="common__title popup__title">Ваш отзыв отправлен!</h2>
+        <p class="common__text popup__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="popup-success__btn-wrapper">
+        <a class="common__btn popup__btn" href="#">Закрыть окно</a>
+      </div>
+    </article>
   </body>
 </html>

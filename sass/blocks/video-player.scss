@@ -1,0 +1,128 @@
+.video-player {
+  position: relative;
+}
+
+.video-player__frame > img {
+  vertical-align: bottom;
+}
+
+.video-player__controls {
+  position: relative;
+  bottom: 45px;
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.video-player__volume-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.video-player__volume-slider-bar {
+  position: relative;
+  width: 80%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.video-player__volume-slider-knob {
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 20%;
+  transform: translateX(-50%);
+  border: 4.5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-player__control-btn {
+  margin: 23px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--replay {
+    margin-right: auto;
+    background-image: url("../img/icon-video-replay.svg");
+  }
+
+  &--subtitles {
+    margin-right: 30px;
+    width: 32px;
+    background-image: url("../img/icon-video-subtitles.svg");
+  }
+
+  &--enlarge {
+    margin-left: 0;
+    background-image: url("../img/icon-video-fullscreen.svg");
+  }
+}
+
+/*
+______________________ Планшетная версия ______________________
+*/
+
+@media #{$breakpoint-tablet} {
+  .video-player {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .video-player__frame {
+    height: 500px;
+    overflow-x: hidden;
+  }
+
+  .video-player__frame > img {
+    margin: 0 -50%;
+    width: auto;
+    height: 100%;
+  }
+
+  .video-player__controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video-player__volume-slider {
+    flex-grow: 1;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .video-player__volume-slider-bar {
+    width: 100%;
+  }
+
+  .video-player__control-btn {
+    margin: 35px 40px;
+
+    &--replay {
+      order: -1;
+    }
+
+    &--subtitles {
+      margin-right: 30px;
+    }
+
+    &--enlarge {
+      margin-left: 0;
+    }
+  }
+}
