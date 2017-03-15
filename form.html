@@ -43,80 +43,102 @@
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Представьтесь:</h3>
         <p class="form-section__line">
-          <label for="first-name" class="common__text form-section__line-label">Имя<sup>*</sup>:</label>
-          <input id="first-name" class="form-section__line-input" type="text" name="first-name" placeholder="Петр" required>
+          <label class="common__text form-section__input-label">Имя<sup>*</sup>:</label>
+          <input class="form-section__input" type="text" name="first-name" placeholder="Петр" required>
         </p>
         <p class="form-section__line">
-          <label for="last-name" class="common__text form-section__line-label">Фамилия<sup>*</sup>:</label>
-          <input id="last-name" class="form-section__line-input" type="text" name="last-name" placeholder="Иванов" required>
+          <label class="common__text form-section__input-label">Фамилия<sup>*</sup>:</label>
+          <input class="form-section__input" type="text" name="last-name" placeholder="Иванов" required>
         </p>
         <p class="form-section__line">
-          <label for="middle-name" class="common__text form-section__line-label">Отчество:</label>
-          <input id="middle-name" class="form-section__line-input" type="text" name="middle-name" placeholder="Александрович">
+          <label class="common__text form-section__input-label">Отчество:</label>
+          <input class="form-section__input" type="text" name="middle-name" placeholder="Александрович">
         </p>
       </fieldset>
 
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Контактная информация:</h3>
-        <p class="form-section__line">
-          <label for="phone-number" class="common__text form-section__line-label">Контактный телефон<sup>*</sup>:</label>
-          <span class="form-section__line-wrapper">
-            <input id="phone-number" class="form-section__line-input" type="tel" name="phone-number" placeholder="Введите телефон" required><span class="form-section__line-input-icon"></span>
-          </span>
+        <p class="form-section__line form-section__line--contacts">
+          <label for="phone-number" class="common__text form-section__input-label">Контактный телефон<sup>*</sup>:</label>
+          <input id="phone-number" class="form-section__input form-section__input--grow" type="tel" name="phone-number" placeholder="Введите телефон" required>
           <span class="common__text form-section__wrong-value">Ошибка, перепроверьте номер</span>
         </p>
-        <p class="form-section__line">
-          <label for="e-mail" class="common__text form-section__line-label">Электронная почта<sup>*</sup>:</label>
-          <span class="form-section__line-wrapper">
-            <input id="e-mail" class="form-section__line-input" type="email" name="e-mail" placeholder="Введите e-mail" required>
-            <span class="form-section__line-input-icon"></span>
-          </span>
+        <p class="form-section__line form-section__line--contacts">
+          <label for="e-mail" class="common__text form-section__input-label">Электронная почта<sup>*</sup>:</label>
+          <input id="e-mail" class="form-section__input form-section__input--grow" type="email" name="e-mail" placeholder="Введите e-mail" required>
         </p>
       </fieldset>
 
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Ваше общее впечатление:</h3>
-        <p class="form-section__line">
-          <input id="reaction-1" class="form-section__radio" type="radio" name="reaction" value="positive" checked>
-          <label for="reaction-1" class="form-section__check-field-label">Скорее положительное</label>
-        </p>
-        <p class="form-section__line">
-          <input id="reaction-2" class="form-section__radio" type="radio" name="reaction" value="negative">
-          <label for="reaction-2" class="form-section__check-field-label">Скорее отрицательное</label>
-        </p>
-        <p class="form-section__line">
-          <input id="reaction-3" class="form-section__radio" type="radio" name="reaction" value="passive">
-          <label for="reaction-3" class="form-section__check-field-label">Затрудняюсь ответить</label>
-        </p>
+        <ul class="form-section__list">
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--radio">
+              <input class="form-section__radio" type="radio" name="reaction" value="positive" checked>
+              <span class="form-section__radio-btn"></span>
+              Скорее положительное
+            </label>
+          </li>
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--radio">
+              <input class="form-section__radio" type="radio" name="reaction" value="negative">
+              <span class="form-section__radio-btn"></span>
+              Скорее отрицательное
+            </label>
+          </li>
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--radio">
+              <input class="form-section__radio" type="radio" name="reaction" value="passive">
+              <span class="form-section__radio-btn"></span>
+              Затрудняюсь ответить
+            </label>
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Посещенные достопримечательности:</h3>
-        <p class="form-section__line">
-          <input id="attraction-1" class="feedback-field__type-checkbox" type="checkbox" name="attraction" value="Devil`s Bridge">
-          <label for="attraction-1" class="feedback-field__check-field-label">Мост Дьявола</label>
-        </p>
-        <p class="form-section__line">
-          <input id="attraction-2" class="feedback-field__type-checkbox" type="checkbox" name="attraction" value="Slide Park">
-          <label for="attraction-2" class="feedback-field__check-field-label">Слайд-парк</label>
-        </p>
-        <p class="form-section__line">
-          <input id="attraction-3" class="feedback-field__type-checkbox" type="checkbox" name="attraction" value="Bell Mountain">
-          <label for="attraction-3" class="feedback-field__check-field-label">Гора-Колокол</label>
-        </p>
-        <p class="form-section__line">
-          <input id="attraction-4" class="feedback-field__type-checkbox" type="checkbox" name="attraction" value="Red Rocks">
-          <label for="attraction-4" class="feedback-field__check-field-label">Красные скалы</label>
-        </p>
+        <ul class="form-section__list">
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--checkbox">
+              <input class="form-section__checkbox" type="checkbox" name="attraction" value="Devil`s Bridge">
+              <span class="form-section__checkbox-btn"></span>
+              Мост Дьявола
+            </label>
+          </li>
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--checkbox">
+              <input class="form-section__checkbox" type="checkbox" name="attraction" value="Slide Park">
+              <span class="form-section__checkbox-btn"></span>
+              Слайд-парк
+            </label>
+          </li>
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--checkbox">
+              <input class="form-section__checkbox" type="checkbox" name="attraction" value="Bell Mountain">
+              <span class="form-section__checkbox-btn"></span>
+              Гора-Колокол
+            </label>
+          </li>
+          <li class="form-section__list-item">
+            <label class="form-section__label form-section__label--checkbox">
+              <input class="form-section__checkbox" type="checkbox" name="attraction" value="Red Rocks">
+              <span class="form-section__checkbox-btn"></span>
+              Красные скалы
+            </label>
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Опишите свои эмоции:</h3>
         <p class="form-section__line">
-          <textarea class="form-section__textarea" name="emotions" cols="27" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form-section__textarea"  name="feedback-text" cols="27" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </p>
       </fieldset>
-      <button class="common__btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
+      <div class="form-section form-section--btn">
+        <button class="common__btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
+      </div>
     </form>
 
     <footer class="page-footer">
