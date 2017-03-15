@@ -1,11 +1,11 @@
 .page-footer {
+  @include container;
   background-color: #fefefe;
 }
 
 .page-footer__hashtag {
-  padding: 40px;
+  padding: 40px 0;
 }
-
 
 .page-footer__socials {
   font-size: 0;
@@ -42,4 +42,25 @@
   background-image: url("../img/htmlacademy.svg");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media #{$breakpoint-tablet} {
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-sizing: border-box;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .page-footer {
+    padding: 0 40px;
+  }
+
+  .page-footer__hashtag,
+  .page-footer__copy {
+    padding-left: 100px;
+  }
 }

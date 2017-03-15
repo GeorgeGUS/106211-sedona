@@ -3,10 +3,11 @@
    ========================================================================== */
 
 /*________global_________*/
-@import "global/fonts.scss";
-@import "global/common.scss";
-@import "global/grids.scss";
 @import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/scaffolding.scss";
+@import "global/common.scss";
 
 /*_________blocks_________*/
 
@@ -25,6 +26,7 @@
 //----------photo------------
 @import "blocks/photos.scss";
 @import "blocks/video.scss";
+@import "blocks/video-player.scss";
 
 //----------form-------------
 @import "blocks/feedback-form.scss";

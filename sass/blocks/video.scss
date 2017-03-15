@@ -1,3 +1,29 @@
+.video {
+  @include container;
+  box-sizing: border-box;
+}
+
 .video__desc {
   padding: 20px 30px;
+}
+
+@media #{$breakpoint-tablet} {
+  .video {
+    padding: 0 60px 40px;
+  }
+
+  .video__desc {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .video {
+    padding-bottom: 85px;
+  }
 }

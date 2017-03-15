@@ -1,4 +1,6 @@
-.feedback-form {}
+.feedback-form {
+  @include container;
+}
 
 .form-section {
   padding: 0 20px;

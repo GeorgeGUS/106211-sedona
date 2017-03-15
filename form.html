@@ -2,19 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона: форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header common__container">
-      <nav class="page-menu page-menu--mobile">
+    <header class="page-header">
+      <nav class="page-menu">
         <div class="page-menu__wrapper">
           <div class="page-menu__btn page-menu__btn--close"></div>
           <ul class="page-menu__list">
-            <li class="page-menu__item"><a class="page-menu__item-link common__btn" href="index.html">Главная</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link common__btn" href="photo.html">Фото и видео</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link common__btn">Форма отзыва</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link common__btn" href="https://htmlacademy.ru">HTML Academy</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link" href="index.html">Главная</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="page-menu__item page-menu__item--spacer"></li>
+            <li class="page-menu__item"><a class="page-menu__item-link">Форма отзыва</a></li>
+            <li class="page-menu__item">
+              <a class="page-menu__item-link" href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -24,22 +28,18 @@
       </div>
     </header>
 
-    <div class="common__container">
-      <section class="intro">
-        <img src="img/text-sedona.svg" width="230" height="40" alt="Sedona">
-      </section>
-    </div>
-
-    <section class="page-description">
-      <div class="common__container">
-        <h2 class="common__title common__title--big page-description__title">Оставьте свой отзыв</h2>
-        <p class="common__text page-description__text">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
-      </div>
+    <section class="intro">
+      <div class="intro__logo"><img src="img/text-sedona.svg" width="230" height="40" alt="Sedona"></div>
     </section>
 
-    <form class="feedback-form common__container" action="http://echo.htmlacademy.ru" method="post">
+    <section class="page-description">
+      <h2 class="common__title common__title--big page-description__title">Оставьте свой отзыв</h2>
+      <p class="common__text page-description__text">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </section>
+
+    <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Представьтесь:</h3>
         <p class="form-section__line">
@@ -112,56 +112,48 @@
 
       <fieldset class="form-section">
         <h3 class="common__title form-section__title">Опишите свои эмоции:</h3>
-        <p class="form-section__line"><textarea class="form-section__textarea" name="emotions" cols="27" rows="6" placeholder="Опишите подробно все свои восторги"></textarea></p>
+        <p class="form-section__line">
+          <textarea class="form-section__textarea" name="emotions" cols="27" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+        </p>
       </fieldset>
-      <div class="common__container">
-        <button class="common__btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
-      </div>
+      <button class="common__btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
     </form>
 
     <footer class="page-footer">
-      <div class="common__container">
-        <section class="page-footer__hashtag">
-          <a class="common__title common__title--big page-footer__hashtag-link" href="#">#visitsedona</a>
-        </section>
-        <section class="page-footer__socials">
-          <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--tw" href="#">Twitter</a>
-          <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--fb" href="#">Facebook</a>
-          <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--yt" href="#">Youtube</a>
-        </section>
-        <section class="page-footer__copy">
-          <a class="common__text page-footer__copy-link" href="https://htmlacademy.ru">
-            Разработано <span class="page-footer__copy-icon"></span>
-          </a>
-        </section>
-      </div>
+      <section class="page-footer__hashtag">
+        <a class="common__title common__title--big page-footer__hashtag-link" href="#">#visitsedona</a>
+      </section>
+      <section class="page-footer__socials">
+        <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--tw" href="#">Twitter</a>
+        <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--fb" href="#">Facebook</a>
+        <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--yt" href="#">Youtube</a>
+      </section>
+      <section class="page-footer__copy">
+        <a class="common__text page-footer__copy-link" href="https://htmlacademy.ru">
+          Разработано <span class="page-footer__copy-icon"></span>
+        </a>
+      </section>
     </footer>
 
     <!-------------------------------------- POPUPS -------------------------------------->
-    <article class="popup popup-error common__container">
-      <div class=" popup__error-wrapper">
-        <h2 class="common__title popup__title">Что-то пошло не так!</h2>
-        <p class="common__text popup__text">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
-        <div class="popup-error__btn-wrapper">
-          <a class="common__btn common__btn--narrow popup__btn" href="#">Ок</a>
-        </div>
-      </div>
+    <article class="popup popup--error">
+      <h2 class="common__title popup__title">Что-то пошло не так!</h2>
+      <p class="common__text popup__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <a class="common__btn common__btn--narrow popup__btn-ok" href="#">Ок</a>
     </article>
 
-    <article class="popup popup-success common__container">
-      <div class="popup__wrapper">
-        <div class="popup__message-wrapper">
-          <h2 class="common__title popup__title">Ваш отзыв отправлен!</h2>
-          <p class="common__text popup__text">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
-            В ближайшее время мы опубликуем его на сайте.
-          </p>
-        </div>
-        <div class="popup-success__btn-wrapper">
-          <a class="common__btn popup__btn" href="#">Закрыть окно</a>
-        </div>
+    <article class="popup popup--success">
+      <div class="popup__message-wrapper">
+        <h2 class="common__title popup__title">Ваш отзыв отправлен!</h2>
+        <p class="common__text popup__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+          В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="popup-success__btn-wrapper">
+        <a class="common__btn popup__btn" href="#">Закрыть окно</a>
       </div>
     </article>
   </body>

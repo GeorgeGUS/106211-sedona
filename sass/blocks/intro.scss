@@ -1,17 +1,49 @@
 .intro {
-  position: relative;
-  padding-top: 50px;
-  box-sizing: border-box;
+  @include container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 160px;
   background-image:
     url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: cover, auto;
+  background-size: cover, cover;
 
   &--big {
-    padding-top: 90px;
     height: 390px;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__logo {
+  width: 282px;
+}
+
+@media #{$breakpoint-tablet} {
+  .intro {
+    height: 290px;
+    //background-image:
+    //  url("../img/bg-intro-triangle-mobile.svg"),
+    //  url("../img/bg-back-desktop@1x.jpg"); /* для будущей большой картинки */
+    background-size: 2210px 57px, 1200px; /* "2210px 57px" - костыль для старой треугольной маски*/
+
+    &--big {
+      height: 520px;
+    }
+  }
+
+  .intro__wrapper {
+    width: 1200px;
+  }
+
+  .intro__logo {
+    width: 460px;
   }
 }

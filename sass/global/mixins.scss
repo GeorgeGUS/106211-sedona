@@ -1,0 +1,32 @@
+@mixin theme-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+
+  @media #{$breakpoint-tablet} {
+    width: 768px;
+  }
+
+  @media #{$breakpoint-desktop} {
+    width: 1200px;
+  }
+}
+
+@mixin bg-img-center-contain {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin bg-img-center-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
