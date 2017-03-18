@@ -1,5 +1,6 @@
 .video {
   @include container;
+  background-color: $bg-color;
   box-sizing: border-box;
 }
 

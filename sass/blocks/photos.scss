@@ -1,5 +1,6 @@
 .photos {
   @include container;
+  background-color: $bg-color;
 }
 
 .photo-item {
