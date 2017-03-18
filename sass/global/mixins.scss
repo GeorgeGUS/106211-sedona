@@ -1,22 +1,47 @@
-@mixin theme-text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
+@mixin tablet {
+  @media #{$breakpoint-tablet} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$breakpoint-desktop} {
+    @content;
+  }
 }
 
 @mixin container {
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  background-color: white;
 
-  @media #{$breakpoint-tablet} {
+  @include tablet {
     width: 768px;
   }
 
-  @media #{$breakpoint-desktop} {
+  @include desktop {
     width: 1200px;
   }
+}
+
+@mixin theme-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@mixin input-font {
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder { @content }
+  :-moz-placeholder           { @content }
+  ::-moz-placeholder          { @content }
+  :-ms-input-placeholder      { @content }
 }
 
 @mixin bg-img-center-contain {
@@ -30,3 +55,4 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+

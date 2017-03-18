@@ -1,3 +1,8 @@
+.common__page-shadow {
+  @include container;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .common__text-wrapper {
   margin: 0 auto;
   max-width: 500px;
@@ -58,5 +63,14 @@ a.common__text {
 @media #{$breakpoint-tablet} {
   .common__title {
     font-size: 21px;
+
+    &--big {
+      padding-bottom: 10px;
+      font-size: 30px;
+    }
+  }
+
+  .common__text {
+    line-height: 24px;
   }
 }

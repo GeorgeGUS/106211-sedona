@@ -3,18 +3,19 @@
   background-color: #fefefe;
 }
 
-.page-footer__hashtag {
-  padding: 40px 0;
+.page-footer__item {
+  padding: 20px 0;
 }
 
-.page-footer__socials {
-  font-size: 0;
+.page-footer__hashtag-link {
+  font-size: 21px;
 }
 
 .page-footer__social-link {
-  margin: 0 3px;
-  height: 50px;
-  width: 50px;
+  margin: 0 4px;
+  font-size: 0;
+  height: 45px;
+  width: 45px;
   background-position: center center;
   background-repeat: no-repeat;
 
@@ -29,38 +30,39 @@
   }
 }
 
-.page-footer__copy {
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
 .page-footer__copy-icon {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  width: 27px;
+  height: 40px;
   vertical-align: middle;
+  @include bg-img-center-cover;
   background-image: url("../img/htmlacademy.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 @media #{$breakpoint-tablet} {
   .page-footer {
+    padding: 0 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
     box-sizing: border-box;
+  }
+
+  .page-footer__item {
+    padding: 40px 0;
   }
 }
 
 @media #{$breakpoint-desktop} {
   .page-footer {
-    padding: 0 40px;
+    padding: 0 120px;
   }
 
-  .page-footer__hashtag,
-  .page-footer__copy {
-    padding-left: 100px;
-  }
+  /* Не понятно, насколько нужны эти отступы, но на макетах
+   страниц главной и фото в десктопной версии они есть,
+    а в десктопной версии страницы формы их нет */
+  //.page-footer__hashtag,
+  //.page-footer__copy {
+  //  padding-left: 90px;
+  //}
 }

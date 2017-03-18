@@ -1,5 +1,6 @@
 .video {
   @include container;
+  background-color: $bg-color;
   box-sizing: border-box;
 }
 
@@ -13,6 +14,7 @@
   }
 
   .video__desc {
+    padding-bottom: 55px;
     margin: 0 auto;
     max-width: 400px;
   }
