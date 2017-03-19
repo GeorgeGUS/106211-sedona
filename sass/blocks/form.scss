@@ -79,11 +79,11 @@
       display: block;
       text-align: left;
     }
+  }
 
+  @include desktop {
     .form-section--first & {
-      @include desktop {
-        margin-left: 80px;
-      }
+      margin-left: 80px;
     }
   }
 }
@@ -122,8 +122,6 @@
       flex-grow: 0;
       flex-direction: row;
       align-items: flex-end;
-      //margin: 0;
-      //margin-right: 15px;
       width: 50%;
     }
   }
@@ -186,10 +184,7 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-
-  @include tablet {
-    width: 100%;
-  }
+  width: 100%;
 
   @include desktop {
     width: auto;
@@ -230,6 +225,10 @@
     display: none;
   }
 
+  &--bottom {
+    display: block;
+  }
+
   @include tablet {
     &--top {
       display: block;
@@ -244,27 +243,31 @@
 
   @include desktop {
     order: -1;
-    &--bottom {
-      display: block;
-    }
-
     &--top {
       display: none;
+    }
+
+    &--bottom {
+      display: block;
     }
   }
 }
 
 .form-section__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: left;
 
+
   @include tablet {
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: center;
   }
 
   @include desktop {
@@ -273,7 +276,7 @@
 }
 
 .form-section__list-item {
-  //margin-bottom: 25px;
+  align-items: center;
 
   @include tablet {
     width: 40%;
@@ -341,7 +344,7 @@
 
 .form-section__textarea {
   flex-grow: 1;
-  padding: 20px;
+  padding: 15px 20px;
   width: 100%;
   resize: none;
   @include input-font;

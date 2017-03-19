@@ -11,16 +11,16 @@
 }
 
 @mixin container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   text-align: center;
 
   @include tablet {
-    width: 768px;
+    min-width: $tablet-width;
   }
 
   @include desktop {
-    width: 1200px;
+    width: $desktop-width;
   }
 }
 

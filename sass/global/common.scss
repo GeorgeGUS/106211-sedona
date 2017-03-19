@@ -38,12 +38,13 @@ a.common__text {
 
 .common__btn {
   display: block;
-  padding: 20px;
+  padding: 16px;
   @include theme-text;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   text-decoration: none;
+  hyphens: auto;
   color: white;
   background: $theme-main-color;
   border: none;
@@ -53,12 +54,11 @@ a.common__text {
     padding: 0;
     font-size: 0;
   }
-
-  &--narrow {
-    margin: 0 auto;
-    width: 180px;
-  }
 }
+
+/*
+______________________ Планшетная версия ______________________
+*/
 
 @media #{$breakpoint-tablet} {
   .common__title {
