@@ -4,8 +4,8 @@ $input-color: #f2f2f2;
 $input-checked-color: #333333;
 
 
-$tablet-width: 768px; // по макету
-//$tablet-width: 640px; // альтернатива, выглядит лучше
+//$tablet-width: 768px; // по макету
+$tablet-width: 700px; // альтернатива, выглядит лучше
 $desktop-width: 1200px;
 $scroll-width: 20px;
 $breakpoint-tablet: (min-width: $tablet-width + $scroll-width);

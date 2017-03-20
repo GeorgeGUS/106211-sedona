@@ -1,8 +1,16 @@
-.video-player {
+.video-player__frame {
   position: relative;
 }
 
-.video-player__frame > img {
+.video-player__frame-wrapper {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.video-player__frame-wrapper > img {
   vertical-align: bottom;
 }
 
@@ -87,9 +95,9 @@ ______________________ Планшетная версия ______________________
     overflow-x: hidden;
   }
 
-  .video-player__frame > img {
+  .video-player__frame  img {
     margin: 0 -50%;
-    width: auto;
+    width: 100%;
     height: 100%;
   }
 

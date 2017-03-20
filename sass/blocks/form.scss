@@ -135,6 +135,7 @@
 .form-section__label-text {
   margin: 5px 20px;
   line-height: 26px;
+  text-align: left;
 
   @include desktop {
     margin: 0;
@@ -154,6 +155,7 @@
   padding: 15px 20px;
   flex-grow: 1;
   width: 130px;
+  min-height: 56px;
   @include input-font;
   background-color: $input-color;
   border: 0;
@@ -198,7 +200,7 @@
   top: 0;
   right: 0;
   width: 56px;
-  height: 56px;
+  height: 100%;
   background-color: darken($input-color, 5);
   @include bg-img-center-contain;
 
