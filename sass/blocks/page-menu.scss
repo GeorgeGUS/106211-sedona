@@ -1,7 +1,11 @@
 .page-menu {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
+}
+
+.page-menu__wrapper {
+  //display: none;
 }
 
 .page-menu__list {

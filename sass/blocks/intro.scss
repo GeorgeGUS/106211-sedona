@@ -1,49 +1,52 @@
 .intro {
-  @include container;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 160px;
-  background-image:
-    url("../img/bg-intro-triangle-mobile.svg"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover, cover;
-
-  &--big {
-    height: 390px;
-  }
+  flex-direction: column;
 }
 
 .intro__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 160px;
+  background-image:
+    url("../../img/bg-intro-triangle-mobile.svg"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-position: bottom, bottom;
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  box-sizing: border-box;
+
+  &--big {
+    min-height: 390px;
+  }
 }
 
 .intro__logo {
-  width: 282px;
+  min-width: 230px;
+  width: 60%;
+  max-width: 460px;
+  min-height: 50px;
+
+  &--index {
+    min-width: 282px;
+  }
 }
 
+/*
+______________________ Планшетная версия ______________________
+*/
+
 @media #{$breakpoint-tablet} {
-  .intro {
-    height: 290px;
+  .intro__wrapper {
+    min-height: 300px;
     //background-image:
-    //  url("../img/bg-intro-triangle-mobile.svg"),
-    //  url("../img/bg-back-desktop@1x.jpg"); /* для будущей большой картинки */
-    background-size: 2210px 57px, 1200px; /* "2210px 57px" - костыль для старой треугольной маски*/
+    //  url("../../img/bg-intro-triangle-mobile.svg"),
+    //  url("../../img/bg-back-desktop@1x.jpg"); /* для будущей большой картинки */
+    background-size: 100% 50px, cover; /* "2210px 57px" - костыль для старой треугольной маски*/
 
     &--big {
-      height: 520px;
+      min-height: 520px;
     }
-  }
-
-  .intro__wrapper {
-    width: 1200px;
-  }
-
-  .intro__logo {
-    width: 460px;
   }
 }
