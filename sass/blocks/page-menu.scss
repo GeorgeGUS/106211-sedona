@@ -9,12 +9,16 @@
 }
 
 .page-menu__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .page-menu__item {
+  flex-grow: 1;
+
   &--spacer {
     display: none;
   }
@@ -22,22 +26,23 @@
 
 .page-menu__item-link {
   display: block;
-  height: 55px;
+  padding: 7px 0;
   @include theme-text;
-  font-size: 18px;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 40px;
   text-decoration: none;
   color: white;
-  background-color: $theme-main-color;
+  background-color: $theme-color-blue;
 }
 
 .page-menu__item:not(:first-of-type) {
-  border-top: 1px solid #9ac2db;
+  box-shadow: 1px solid lighten($theme-color-blue, 10);
+  border-top: 1px solid lighten($theme-color-blue, 10);
 }
 
 .page-menu__item:not(:last-of-type) {
-  border-bottom: 1px solid #678fa8;
+  box-shadow: 1px solid lighten($theme-color-blue, 10);
+  border-bottom: 1px solid darken($theme-color-blue, 10);
 }
 
 .page-menu__item:last-child .page-menu__item-link {
@@ -55,22 +60,23 @@
   z-index: 20;
   cursor: pointer;
   &--close {
-    background-image: url("/img/icon-cross.svg");
+    background-image: url("../img/icon-cross.svg");
   }
   &--toggle {
-    background-image: url("/img/icon-menu.svg");
+    background-image: url("../img/icon-menu.svg");
   }
 }
 
 @media #{$breakpoint-tablet} {
-  .page-menu {
+  .page-menu__wrapper {
+    display: flex;
     width: 100%;
-    position: absolute;
-    z-index: 30;
+    //flex-direction: column;
   }
 
   .page-menu__list {
-    display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-around;
   }
 

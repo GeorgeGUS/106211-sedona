@@ -53,9 +53,9 @@
 .photo-item__votes {
   min-width: 70px;
   max-width: 40%;
-  overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .photo-item__vote-icon {
@@ -78,10 +78,10 @@ ______________________ Планшетная версия ______________________
 
 @media #{$breakpoint-tablet} {
   .photos {
-    padding: 20px 60px;
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 60px;
+    box-sizing: border-box;
   }
 
   .photo-item {
@@ -111,7 +111,7 @@ ______________________ Планшетная версия ______________________
     flex-grow: 1;
     padding: 16px 20px;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: $theme-color-lightgray;
     box-sizing: border-box;
   }
 

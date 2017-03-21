@@ -8,7 +8,7 @@
 
   &--full {
     color: white;
-    background-color: $theme-main-color;
+    background-color: $theme-color-blue;
   }
 }
 
@@ -32,11 +32,11 @@
   @include bg-img-center-cover;
 
   &--city {
-    background-image: url("../../img/photo-city@1x.jpg");
+    background-image: url("../img/photo-city@1x.jpg");
   }
 
   &--bridge {
-    background-image: url("../../img/photo-bridge@1x.jpg");
+    background-image: url("../img/photo-bridge@1x.jpg");
   }
 }
 

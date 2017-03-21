@@ -157,7 +157,7 @@
   width: 130px;
   min-height: 56px;
   @include input-font;
-  background-color: $input-color;
+  background-color: $theme-color-lightgray;
   border: 0;
   box-sizing: border-box;
 
@@ -201,17 +201,17 @@
   right: 0;
   width: 56px;
   height: 100%;
-  background-color: darken($input-color, 5);
+  background-color: darken($theme-color-lightgray, 5);
   @include bg-img-center-contain;
 
 
   &--phone {
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-size: 18px;
   }
 
   &--mail {
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-size: 16px;
   }
 }
@@ -315,7 +315,7 @@
   margin-right: 25px;
   width: 55px;
   height: 55px;
-  background-color: $input-color;
+  background-color: $theme-color-lightgray;
 }
 
 .form-section__radio-btn {
@@ -341,7 +341,7 @@
   width: 20px;
   height: 20px;
   @include bg-img-center-contain;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
 }
 
 .form-section__textarea {
@@ -350,7 +350,7 @@
   width: 100%;
   resize: none;
   @include input-font;
-  background-color: $input-color;
+  background-color: $theme-color-lightgray;
   border: 0;
 
   @include tablet {

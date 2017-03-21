@@ -1,13 +1,13 @@
 .contacts {
   @include container;
-  background-color: white;
+  background-color: $bg-color;
 }
 
 .contacts__wrapper {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: white;
+  background-color: $bg-color;
 }
 
 .contacts__btn {
