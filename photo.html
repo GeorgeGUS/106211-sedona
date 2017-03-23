@@ -10,37 +10,32 @@
     <div class="common__page-shadow">
       <header class="page-header">
         <nav class="page-menu">
-          <div class="page-menu__wrapper">
-            <div class="page-menu__btn page-menu__btn--close"></div>
-            <ul class="page-menu__list">
-              <li class="page-menu__item">
-                <a class="page-menu__item-link" href="index.html">Главная</a>
-              </li>
-              <li class="page-menu__item">
-                <a class="page-menu__item-link">Фото и видео</a>
-              </li>
-              <li class="page-menu__item page-menu__item--spacer">
-                <a href="index.html" class="page-header__logo-link">
-                  <img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
-                </a>
-              </li>
-              <li class="page-menu__item">
-                <a class="page-menu__item-link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="page-menu__item">
-                <a class="page-menu__item-link" href="https://htmlacademy.ru">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="page-menu__list">
+            <li class="page-menu__item">
+              <a class="page-menu__item-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-menu__item">
+              <a class="page-menu__item-link page-menu__item-link--active">Фото и видео</a>
+            </li>
+            <li class="page-menu__logo">
+              <a href="index.html" class="page-header__logo-link">
+                <img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+              </a>
+            </li>
+            <li class="page-menu__item">
+              <a class="page-menu__item-link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="page-menu__item">
+              <a class="page-menu__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
-        <div class="page-header__logo-wrapper">
-          <div class="page-header__logo">
-            <a href="index.html" class="page-header__logo-link">
-              <img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
-            </a>
-          </div>
-          <div class="page-menu__btn page-menu__btn--toggle"></div>
+        <div class="page-header__logo">
+          <a href="index.html" class="page-header__logo-link">
+            <img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+          </a>
         </div>
+        <div class="page-menu__btn page-menu__btn--open"></div>
       </header>
 
       <section class="intro">
@@ -176,5 +171,8 @@
         </section>
       </footer>
     </div>
+
+    <!--________________ Скрипты ________________-->
+    <script src="./js/page-menu.js"></script>
   </body>
 </html>

@@ -41,14 +41,13 @@
   padding: 30px;
 }
 
-.popup__btn-wrapper {
+.popup__close-btn-wrapper {
   padding: 20px;
   background-color: $theme-color-lightgray;
 }
 
-.popup__btn-ok {
-  margin: 30px 10px;
-  margin-bottom: 10px;
+.popup__ok-btn-wrapper {
+  padding: 30px 10px 10px;
 }
 
 /*

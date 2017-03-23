@@ -161,6 +161,16 @@
   border: 0;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: darken($theme-color-lightgray, 5);
+  }
+
+  &:active,
+  &:focus {
+    background-color: $bg-color;
+    box-shadow: inset 0 0 0 4px darken($theme-color-lightgray, 5);
+  }
+
   &--grow {
     margin-left: 0;
     width: 100%;
@@ -316,6 +326,18 @@
   width: 55px;
   height: 55px;
   background-color: $theme-color-lightgray;
+
+
+}
+
+.form-section__label--right:hover .form-section__radio-btn,
+.form-section__label--right:hover .form-section__checkbox-btn {
+  background-color: darken($theme-color-lightgray, 5);
+}
+
+.form-section__label--right:active .form-section__radio-btn,
+.form-section__label--right:active .form-section__checkbox-btn {
+  background-color: darken($theme-color-lightgray, 10);
 }
 
 .form-section__radio-btn {
@@ -344,6 +366,11 @@
   background-image: url("../img/icon-tick.svg");
 }
 
+.form-section__label--right:active .form-section__radio-btn::after,
+.form-section__label--right:active .form-section__checkbox-btn::after {
+  opacity: 0.3;
+}
+
 .form-section__textarea {
   flex-grow: 1;
   padding: 15px 20px;
@@ -353,12 +380,14 @@
   background-color: $theme-color-lightgray;
   border: 0;
 
-  @include tablet {
-
+  &:hover {
+    background-color: darken($theme-color-lightgray, 5);
   }
 
-  @include desktop {
-
+  &:active,
+  &:focus {
+    background-color: $bg-color;
+    box-shadow: inset 0 0 0 4px darken($theme-color-lightgray, 5);
   }
 }
 

@@ -48,6 +48,15 @@ a.common__text {
   color: white;
   background-color: $theme-color-blue;
   border: none;
+  outline: none;
+
+  &:hover {
+    background-color: $theme-color-blue-hover;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $theme-color-blue-active;
+  }
 
   &--social {
     display: inline-block;
