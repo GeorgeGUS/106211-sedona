@@ -12,3 +12,4 @@ $desktop-width: 1200px;
 $scroll-width: 20px;
 $breakpoint-tablet: (min-width: $tablet-width + $scroll-width);
 $breakpoint-desktop: (min-width: $desktop-width + $scroll-width);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);

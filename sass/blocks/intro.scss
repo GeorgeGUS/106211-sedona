@@ -9,13 +9,20 @@
   justify-content: center;
   align-items: center;
   min-height: 160px;
+  box-sizing: border-box;
+  background-position: bottom, bottom;
+  background-repeat: no-repeat;
   background-image:
     url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom, bottom;
-  background-repeat: no-repeat;
-  background-size: cover, auto;
-  box-sizing: border-box;
+  background-size: 100% 27px, cover;
+
+  @media #{$retina} {
+    background-image:
+      url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% 27px, cover;
+  }
 
   &--big {
     min-height: 390px;
@@ -39,11 +46,21 @@ ______________________ Планшетная версия ______________________
 
 @media #{$breakpoint-tablet} {
   .intro__wrapper {
-    min-height: 300px;
+    /*min-height: 300px;
     //background-image:
     //  url("../img/bg-intro-triangle-mobile.svg"),
-    //  url("../img/bg-back-desktop@1x.jpg"); /* для будущей большой картинки */
-    background-size: 100% 50px, cover; /* "2210px 57px" - костыль для старой треугольной маски*/
+    //  url("../img/bg-back-desktop@1x.jpg"); !* для будущей большой картинки *!
+    background-size: 100% 50px, cover; !* "2210px 57px" - костыль для старой треугольной маски*!*/
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg"),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto 57px, auto 100%;
+
+    @media #{$retina} {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@2x.jpg");
+      background-size: auto 57px, auto 100%;
+    }
 
     &--big {
       min-height: 520px;
