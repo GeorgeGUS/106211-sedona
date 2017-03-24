@@ -19,18 +19,17 @@
   font-size: 0;
   height: 45px;
   width: 45px;
-  background-position: center center;
-  background-repeat: no-repeat;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
+  &:active svg {
+    opacity: 0.3;
   }
-  &--fb {
-    background-image: url("../img/icon-facebook.svg");
-  }
-  &--yt {
-    background-image: url("../img/icon-youtube.svg");
-  }
+}
+
+.page-footer__social-link svg {
+  fill: white;
 }
 
 .page-footer__copy-icon {
@@ -38,8 +37,14 @@
   width: 27px;
   height: 40px;
   vertical-align: middle;
-  @include bg-img-center-cover;
-  background-image: url("../img/htmlacademy.svg");
+}
+
+.page-footer__copy-link:hover svg {
+  fill: $theme-color-blue;
+}
+
+.page-footer__copy-link:active svg {
+  opacity: 0.3;
 }
 
 @media #{$breakpoint-tablet} {

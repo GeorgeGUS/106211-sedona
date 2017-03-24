@@ -34,11 +34,21 @@
   @include bg-img-center-cover;
 
   &--city {
-    background-image: url("../img/photo-city@1x.jpg");
+    background-image: url("../img/photo-city-mobile@1x.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/photo-city-mobile@2x.jpg");
+      background-size: auto 100%;
+    }
   }
 
   &--bridge {
-    background-image: url("../img/photo-bridge@1x.jpg");
+    background-image: url("../img/photo-bridge-mobile@1x.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/photo-bridge-mobile@2x.jpg");
+      background-size:cover;
+    }
   }
 }
 
@@ -67,8 +77,23 @@
   .feature__image {
     flex-basis: 100% * 2/3;
 
+    &--city {
+      background-image: url("../img/photo-city-tablet@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-city-tablet@2x.jpg");
+        background-size:cover;
+      }
+    }
+
     &--bridge {
       order: 1;
+      background-image: url("../img/photo-bridge-tablet@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-bridge-tablet@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 
@@ -83,5 +108,28 @@
   .feature__flex-wrapper {
     display: flex;
     width: 100%;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .feature__image {
+    &--city {
+      background-image: url("../img/photo-city@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-city@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--bridge {
+      order: 1;
+      background-image: url("../img/photo-bridge@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-bridge@2x.jpg");
+        background-size: cover;
+      }
+    }
   }
 }

@@ -18,7 +18,7 @@
 .photo-item__img {
   position: relative;
   width: 100%;
-  min-height: 280px;
+  height: 280px;
   overflow: hidden;
 }
 
@@ -64,8 +64,7 @@
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  @include bg-img-center-contain;
-  background-image: url("../img/icon-like.svg");
+  cursor: pointer;
 }
 
 .photo-item__vote-score {
@@ -165,5 +164,9 @@ ______________________ Десктопная версия ______________________
 
   .photo-item:nth-last-child(2n):not(:first-child) .photo-item__bottom-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-item__vote-icon svg {
+    fill: #ffffff;
   }
 }

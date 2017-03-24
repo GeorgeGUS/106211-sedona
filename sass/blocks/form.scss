@@ -394,12 +394,12 @@
 .form-section__submit-btn {
   width: 100%;
 
-  @include tablet {
-    width: 50%;
+  &:disabled {
+    background-color: darken($theme-color-lightgray, 5);
   }
 
-  @include desktop {
-
+  @include tablet {
+    width: 50%;
   }
 }
 
