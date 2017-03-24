@@ -126,15 +126,30 @@
       </section>
 
       <section class="contacts">
-        <div class="common__text-wrapper contacts__wrapper">
+         <div class="common__text-wrapper contacts__wrapper">
           <h2 class="common__title contacts__title">Заинтересовались?</h2>
           <p class="common__text">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
           <a class="common__btn contacts__btn" href="#">Найти гостиницу</a>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map" id="map">
           <div class="contacts__map-pin"></div>
+          <script>
+            function initMap() {
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7,
+                center: {lat: 34.844630, lng: -111.759394}
+              });
+
+              var image = 'img/icon-map-marker.svg';
+              var beachMarker = new google.maps.Marker({
+                position: {lat: 34.844630, lng: -111.759394},
+                map: map,
+                icon: image
+              });
+            }
+          </script>
         </div>
       </section>
 
@@ -179,5 +194,7 @@
 
     <!--________________ Скрипты ________________-->
     <script src="./js/page-menu.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCubo6pvzkH1-z6BaeX_Dwz8SFaJXid5uM&signed_in=true&callback=initMap"></script>
   </body>
 </html>

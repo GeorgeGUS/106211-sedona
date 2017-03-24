@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csscomb = require('gulp-csscomb');
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -16,6 +17,7 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
+    .pipe(csscomb())
     .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });

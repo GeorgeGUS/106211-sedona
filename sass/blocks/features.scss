@@ -32,24 +32,6 @@
 .feature__image {
   min-height: 300px;
   @include bg-img-center-cover;
-
-  &--city {
-    background-image: url("../img/photo-city-mobile@1x.jpg");
-
-    @media #{$retina} {
-      background-image: url("../img/photo-city-mobile@2x.jpg");
-      background-size: auto 100%;
-    }
-  }
-
-  &--bridge {
-    background-image: url("../img/photo-bridge-mobile@1x.jpg");
-
-    @media #{$retina} {
-      background-image: url("../img/photo-bridge-mobile@2x.jpg");
-      background-size:cover;
-    }
-  }
 }
 
 @media #{$breakpoint-tablet} {
@@ -76,25 +58,6 @@
 
   .feature__image {
     flex-basis: 100% * 2/3;
-
-    &--city {
-      background-image: url("../img/photo-city-tablet@1x.jpg");
-
-      @media #{$retina} {
-        background-image: url("../img/photo-city-tablet@2x.jpg");
-        background-size:cover;
-      }
-    }
-
-    &--bridge {
-      order: 1;
-      background-image: url("../img/photo-bridge-tablet@1x.jpg");
-
-      @media #{$retina} {
-        background-image: url("../img/photo-bridge-tablet@2x.jpg");
-        background-size: cover;
-      }
-    }
   }
 
   .feature__wrapper {
@@ -111,7 +74,50 @@
   }
 }
 
-@media #{$breakpoint-desktop} {
+@media (max-width: 320px) {
+  .feature__image {
+
+    &--city {
+      background-image: url("../img/photo-city-mobile@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-city-mobile@2x.jpg");
+      }
+    }
+
+    &--bridge {
+      background-image: url("../img/photo-bridge-mobile@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-bridge-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .feature__image {
+
+    &--city {
+      background-image: url("../img/photo-city-tablet@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-city-tablet@2x.jpg");
+      }
+    }
+
+    &--bridge {
+      order: 1;
+      background-image: url("../img/photo-bridge-tablet@1x.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/photo-bridge-tablet@2x.jpg");
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
   .feature__image {
     &--city {
       background-image: url("../img/photo-city@1x.jpg");

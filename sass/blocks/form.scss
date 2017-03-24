@@ -4,15 +4,6 @@
   @include container;
   background-color: $bg-color;
   box-sizing: border-box;
-
-  @include tablet {
-    padding: 0 60px;
-    padding-bottom: 50px;
-  }
-
-  @include desktop {
-    padding: 0 120px;
-  }
 }
 
 .form-section {
@@ -29,75 +20,21 @@
     align-items: center;
     border-top: none;
   }
-
-  @include tablet {
-    padding: 20px 0 50px;
-
-    &--half {
-      padding: 0;
-      width: 50%;
-      border: 0;
-    }
-
-    &--narrow {
-      padding-left: 9%;
-      border-left: 1px solid #e5e5e5;
-    }
-
-    &--first {
-      order: -1;
-    }
-  }
-
-  @include desktop {
-
-  }
 }
 
 .form-section__legend {
   display: none;
   text-align: center;
-
-  @include tablet {
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    display: block;
-    width: 400px;
-  }
 }
 
 .form-section__title {
   text-align: center;
   margin-top: 0;
-
-  @include tablet {
-    display: none;
-
-    .form-section--half & {
-      margin-top: 0;
-      display: block;
-      text-align: left;
-    }
-  }
-
-  @include desktop {
-    .form-section--first & {
-      margin-left: 80px;
-    }
-  }
 }
 
 .form-section__wrapper {
   display: flex;
   flex-wrap: wrap;
-
-
-  @include desktop {
-    &--nowrap {
-      flex-wrap: nowrap;
-    }
-  }
 }
 
 .form-section__label {
@@ -112,18 +49,6 @@
     margin: 0;
     align-items: stretch;
     flex-direction: column;
-
-    @include tablet {
-      margin-bottom: 15px;
-      width: 100%;
-    }
-
-    @include desktop {
-      flex-grow: 0;
-      flex-direction: row;
-      align-items: flex-end;
-      width: 50%;
-    }
   }
 
   &--right {
@@ -136,17 +61,6 @@
   margin: 5px 20px;
   line-height: 26px;
   text-align: left;
-
-  @include desktop {
-    margin: 0;
-    padding: 15px 0;
-  }
-
-  &--hidden {
-    @include desktop {
-      display: none;
-    }
-  }
 }
 
 .form-section__input {
@@ -178,14 +92,6 @@
     flex-grow: 1;
     order: 0;
   }
-
-  @include desktop {
-    &--grow {
-      flex-grow: 0;
-      margin-left: 15px;
-      width: 315px;
-    }
-  }
 }
 
 @include placeholder {
@@ -197,10 +103,6 @@
   flex-wrap: wrap;
   position: relative;
   width: 100%;
-
-  @include desktop {
-    width: auto;
-  }
 }
 
 .form-section__input-icon {
@@ -240,29 +142,6 @@
   &--bottom {
     display: block;
   }
-
-  @include tablet {
-    &--top {
-      display: block;
-      margin-left: auto;
-      margin-right: 0;
-    }
-
-    &--bottom {
-      display: none;
-    }
-  }
-
-  @include desktop {
-    order: -1;
-    &--top {
-      display: none;
-    }
-
-    &--bottom {
-      display: block;
-    }
-  }
 }
 
 .form-section__list {
@@ -273,43 +152,10 @@
   margin: 0;
   list-style: none;
   text-align: left;
-
-
-  @include tablet {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  @include desktop {
-
-  }
 }
 
 .form-section__list-item {
   align-items: center;
-
-  @include tablet {
-    width: 40%;
-
-    &.li-1 {
-      order: 0;
-    }
-    &.li-2 {
-      order: 2;
-    }
-    &.li-3 {
-      order: 1;
-    }
-    &.li-4 {
-      order: 3;
-    }
-  }
-
-  @include desktop {
-    width: 25%;
-  }
 }
 
 .form-section__radio,
@@ -326,8 +172,6 @@
   width: 55px;
   height: 55px;
   background-color: $theme-color-lightgray;
-
-
 }
 
 .form-section__label--right:hover .form-section__radio-btn,
@@ -397,20 +241,10 @@
   &:disabled {
     background-color: darken($theme-color-lightgray, 5);
   }
-
-  @include tablet {
-    width: 50%;
-  }
 }
 
 .form-section__footnote {
   display: none;
-
-  @include tablet {
-    display: block;
-    width: 50%;
-    text-align: right;
-  }
 }
 
 /*
@@ -421,6 +255,86 @@ ______________________ Планшетная версия ______________________
   .form {
     padding: 0 60px;
   }
+
+  .form-section {
+    padding: 20px 0 50px;
+
+    &--half {
+      padding: 0;
+      width: 50%;
+      border: 0;
+    }
+
+    &--narrow {
+      padding-left: 9%;
+      border-left: 1px solid #e5e5e5;
+    }
+
+    &--first {
+      order: -1;
+    }
+  }
+
+  .form-section__legend {
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: block;
+    width: 400px;
+  }
+
+  .form-section__title {
+    display: none;
+  }
+
+  .form-section--half .form-section__title {
+    margin-top: 0;
+    display: block;
+    text-align: left;
+  }
+
+  .form-section__label--column {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .form-section__wrong-value {
+    &--top {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &--bottom {
+      display: none;
+    }
+  }
+
+  .form-section__list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .form-section__list-item {
+    width: 40%;
+
+    &.li-1 { order: 0; }
+    &.li-2 { order: 2; }
+    &.li-3 { order: 1; }
+    &.li-4 { order: 3; }
+  }
+
+  .form-section__submit-btn {
+    width: 50%;
+  }
+
+  .form-section__footnote {
+    display: block;
+    width: 50%;
+    text-align: right;
+  }
 }
 
 /*
@@ -430,5 +344,54 @@ ______________________ Десктопная версия ______________________
 @media #{$breakpoint-desktop} {
   .form {
     padding: 0 120px;
+  }
+
+  .form-section--first .form-section__title {
+    margin-left: 80px;
+  }
+
+  .form-section__wrapper--nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .form-section__label--column {
+    flex-grow: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 50%;
+  }
+
+  .form-section__label-text {
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .form-section__label-text--hidden {
+    display: none;
+  }
+
+  .form-section__input--grow {
+    flex-grow: 0;
+    margin-left: 15px;
+    width: 315px;
+  }
+
+  .form-section__input-wrapper {
+    width: auto;
+  }
+
+  .form-section__wrong-value {
+    order: -1;
+    &--top {
+      display: none;
+    }
+
+    &--bottom {
+      display: block;
+    }
+  }
+
+  .form-section__list-item {
+    width: 25%;
   }
 }

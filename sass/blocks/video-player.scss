@@ -58,16 +58,20 @@
   width: 20px;
   height: 20px;
   font-size: 0;
-  fill: rgba(255, 255, 255, 0.8);
   cursor: pointer;
+  fill: #5c6870;
 
   &:hover svg {
-    fill: #ffffff;
+    fill: #333333;
   }
 
-
   &:active svg {
+    fill: #333333;
     opacity: 0.3;
+  }
+
+  &--replay {
+    margin-right: auto;
   }
 }
 
@@ -89,10 +93,8 @@ ______________________ Планшетная версия ______________________
   }
 
   .video-player__frame-wrapper img {
-    //margin-left: -50%;
     width: auto;
     height: 100%;
-    //transform: translateX(25%);
   }
 
 
@@ -117,8 +119,18 @@ ______________________ Планшетная версия ______________________
 
   .video-player__control-btn {
     margin: 35px 40px;
+    fill: rgba(255, 255, 255, 0.8);
+
+    &:hover svg {
+      fill: #ffffff;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
 
     &--replay {
+      margin-right: 40px;
       order: -1;
     }
 
