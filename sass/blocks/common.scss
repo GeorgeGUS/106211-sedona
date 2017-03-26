@@ -1,6 +1,8 @@
-.common__page-shadow {
+.common {
   @include container;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  &--outer-shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .common__text-wrapper {
@@ -63,6 +65,7 @@ a.common__text {
     display: inline-block;
     padding: 0;
     font-size: 0;
+    vertical-align: middle;
   }
 }
 

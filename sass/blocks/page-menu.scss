@@ -1,11 +1,6 @@
 .page-menu {
   min-width: 320px;
   margin: 0 auto;
-  display: none;
-
-  &--opened {
-    display: block;
-  }
 }
 
 .page-menu__list {
@@ -14,6 +9,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.page-menu--no-js .page-menu__list--closed {
+  display: flex;
 }
 
 .page-menu__item {
@@ -114,12 +117,17 @@
   }
 }
 
-@media #{$breakpoint-tablet} {
-  .page-menu {
-    display: flex;
-  }
+.page-menu--no-js .page-menu__btn {
+  display: none;
+}
 
+/*
+______________________ Планшетная версия ______________________
+*/
+
+@media #{$breakpoint-tablet} {
   .page-menu__list {
+    display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;

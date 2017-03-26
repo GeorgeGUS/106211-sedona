@@ -25,6 +25,7 @@
 .page-header__logo-link {
   display: inline-block;
   margin: 0 auto;
+  vertical-align: top;
 }
 
 @media #{$breakpoint-tablet} {

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="common__page-shadow">
+    <div class="common common--outer-shadow">
       <header class="page-header">
-        <nav class="page-menu">
-          <ul class="page-menu__list">
+        <nav class="page-menu page-menu--no-js">
+          <ul class="page-menu__list page-menu__list--closed">
             <li class="page-menu__item">
               <a class="page-menu__item-link page-menu__item-link--active">Главная</a>
             </li>
@@ -20,8 +20,8 @@
             <li class="page-menu__logo">
               <a class="page-header__logo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                  <img src="img/logo-sedona-tablet.svg">
+                  <source media="(min-width: 1220px)" srcset="img/logo-sedona-desktop.svg">
+                  <img src="img/logo-sedona-tablet.svg" width="100" height="80" alt="City of Sedona">
                 </picture>
               </a>
             </li>
@@ -32,11 +32,11 @@
               <a class="page-menu__item-link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
+          <div class="page-menu__btn page-menu__btn--open"></div>
         </nav>
         <div class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+          <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona">
         </div>
-        <div class="page-menu__btn page-menu__btn--open"></div>
       </header>
 
       <section class="intro">
@@ -58,68 +58,68 @@
       </section>
 
       <section class="features">
-        <section class="feature__flex-wrapper">
+        <section class="features__flex-wrapper">
           <section class="features__item features__item--full">
-            <div class="feature__wrapper">
-              <h2 class="common__title feature__title">Настоящий городок</h2>
-              <p class="common__text feature__number">- №1 -</p>
-              <p class="common__text feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="features__wrapper">
+              <h2 class="common__title features__title">Настоящий городок</h2>
+              <p class="common__text features__number">- №1 -</p>
+              <p class="common__text features__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
           </section>
-          <section class="feature__image feature__image--city">
+          <section class="features__image features__image--city">
           </section>
         </section>
 
         <section class="feature-descs">
-          <div class="feature-desc__item">
-            <h3 class="common__title feature-desc__item-title feature-desc__item-title--house">Жилье</h3>
+          <div class="feature-descs__item">
+            <h3 class="common__title feature-descs__item-title feature-descs__item-title--house">Жилье</h3>
             <p class="common__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="feature-desc__item">
+          <div class="feature-descs__item">
 
-            <h3 class="common__title feature-desc__item-title feature-desc__item-title--souvenirs">Сувениры</h3>
+            <h3 class="common__title feature-descs__item-title feature-descs__item-title--souvenirs">Сувениры</h3>
             <p class="common__text">Не только китайского, но и местного производства!</p>
           </div>
-          <div class="feature-desc__item">
-            <h3 class="common__title feature-desc__item-title feature-desc__item-title--food">Еда</h3>
+          <div class="feature-descs__item">
+            <h3 class="common__title feature-descs__item-title feature-descs__item-title--food">Еда</h3>
             <p class="common__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </section>
 
-        <section class="feature__flex-wrapper">
+        <section class="features__flex-wrapper">
           <section class="features__item features__item--full features__item--right">
-            <div class="feature__wrapper">
-              <h2 class="common__title feature__title">Там есть мост дьявола</h2>
-              <p class="common__text feature__number">- №2 -</p>
+            <div class="features__wrapper">
+              <h2 class="common__title features__title">Там есть мост дьявола</h2>
+              <p class="common__text features__number">- №2 -</p>
               <p class="common__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
           </section>
-          <section class="feature__image feature__image--bridge">
+          <section class="features__image features__image--bridge">
           </section>
         </section>
 
-        <section class="feature__flex-wrapper">
+        <section class="features__flex-wrapper">
           <section class="features__item">
-            <div class="feature__wrapper feature__wrapper--underlined">
-              <h2 class="common__title feature__title">Небольшая площадь</h2>
-              <p class="common__text feature__number">- №3 -</p>
+            <div class="features__wrapper features__wrapper--underlined">
+              <h2 class="common__title features__title">Небольшая площадь</h2>
+              <p class="common__text features__number">- №3 -</p>
               <p class="common__text">Все достопримечательности находятся очень близко</p>
             </div>
           </section>
 
           <section class="features__item">
-            <div class="feature__wrapper feature__wrapper--underlined">
-              <h2 class="common__title feature__title">Красивая дорога</h2>
-              <p class="common__text feature__number">- №4 -</p>
+            <div class="features__wrapper features__wrapper--underlined">
+              <h2 class="common__title features__title">Красивая дорога</h2>
+              <p class="common__text features__number">- №4 -</p>
               <p class="common__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </section>
 
           <section class="features__item">
-            <div class="feature__wrapper">
-              <h2 class="common__title feature__title">Мало туристов</h2>
-              <p class="common__text feature__number">- №5 -</p>
-              <p class="common__text feature__text">Большинство едет в гранд каньон и толпится там</p>
+            <div class="features__wrapper">
+              <h2 class="common__title features__title">Мало туристов</h2>
+              <p class="common__text features__number">- №5 -</p>
+              <p class="common__text features__text">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </section>
         </section>
@@ -131,26 +131,9 @@
           <p class="common__text">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-          <a class="common__btn contacts__btn" href="#">Найти гостиницу</a>
+          <a class="common__btn contacts__btn" href="https://www.trivago.ru/?iPathId=34266">Найти гостиницу</a>
         </div>
-        <div class="contacts__map" id="map">
-          <div class="contacts__map-pin"></div>
-          <script>
-            function initMap() {
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 7,
-                center: {lat: 34.844630, lng: -111.759394}
-              });
-
-              var image = 'img/icon-map-marker.svg';
-              var beachMarker = new google.maps.Marker({
-                position: {lat: 34.844630, lng: -111.759394},
-                map: map,
-                icon: image
-              });
-            }
-          </script>
-        </div>
+        <div class="contacts__map" id="map"></div>
       </section>
 
       <footer class="page-footer">
@@ -193,8 +176,8 @@
     </div>
 
     <!--________________ Скрипты ________________-->
-    <script src="./js/page-menu.js"></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCubo6pvzkH1-z6BaeX_Dwz8SFaJXid5uM&signed_in=true&callback=initMap"></script>
+    <script src="js/page-menu.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCubo6pvzkH1-z6BaeX_Dwz8SFaJXid5uM&signed_in=true&callback=initMap"></script>
   </body>
 </html>

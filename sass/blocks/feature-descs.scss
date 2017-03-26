@@ -6,7 +6,7 @@
   background-color: $bg-color;
 }
 
-.feature-desc__item-title {
+.feature-descs__item-title {
   position: relative;
 
   &::before {
@@ -40,7 +40,7 @@
     text-align: center;
   }
 
-  .feature-desc__item {
+  .feature-descs__item {
     flex-grow: 1;
     width: 100%;
     padding: 135px 45px 0;
@@ -50,7 +50,7 @@
     }
   }
 
-  .feature-desc__item-title::before {
+  .feature-descs__item-title::before {
     left: 50%;
     top: -100px;
     width: 75px;
