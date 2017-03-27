@@ -1,8 +1,3 @@
-.photos {
-  @include container;
-  background-color: $bg-color;
-}
-
 .photo-item {
   padding: 20px;
   text-align: left;
@@ -20,6 +15,7 @@
   width: 100%;
   height: 280px;
   overflow: hidden;
+  background: linear-gradient(320deg, darken($theme-color-lightgray, 15) 0%, $theme-color-lightgray 100%);
 }
 
 .photo-item__img-wrapper {
@@ -76,13 +72,6 @@ ______________________ Планшетная версия ______________________
 */
 
 @media #{$breakpoint-tablet} {
-  .photos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 60px;
-    box-sizing: border-box;
-  }
-
   .photo-item {
     display: flex;
     flex-direction: column;
@@ -133,12 +122,6 @@ ______________________ Десктопная версия ______________________
 */
 
 @media #{$breakpoint-desktop} {
-  .photos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 0;
-  }
-
   .photo-item {
     position: relative;
     height: 270px;

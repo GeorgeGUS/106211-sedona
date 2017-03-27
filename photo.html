@@ -20,8 +20,9 @@
             <li class="page-menu__logo">
               <a href="index.html" class="page-header__logo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                  <img src="img/logo-sedona-tablet.svg" width="100" height="80" alt="City of Sedona">
+                  <source media="(min-width: 1220px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 788px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona">
                 </picture>
               </a>
             </li>
@@ -34,13 +35,6 @@
           </ul>
           <div class="page-menu__btn page-menu__btn--open"></div>
         </nav>
-        <div class="page-header__logo">
-          <a href="index.html" class="page-header__logo-link">
-            <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona">
-          </a>
-
-        </div>
-
       </header>
 
       <section class="intro">
@@ -58,7 +52,7 @@
         </p>
       </section>
 
-      <section class="photos">
+      <section class="photo">
         <article class="photo-item photo-item--big">
           <div class="photo-item__img">
             <div class="photo-item__img-wrapper">
@@ -264,6 +258,7 @@
     </div>
 
     <!--________________ Скрипты ________________-->
+    <script src="js/picturefill.min.js"></script>
     <script src="js/page-menu.js"></script>
   </body>
 </html>

@@ -9,22 +9,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
-  &--closed {
-    display: none;
-  }
 }
 
-.page-menu--no-js .page-menu__list--closed {
-  display: flex;
-}
-
-.page-menu__item {
+.page-menu__item,
+.page-menu--no-js .page-menu__list--closed .page-menu__item {
   display: block;
 }
 
-.page-menu__logo {
+.page-menu__list--closed .page-menu__item {
   display: none;
+}
+
+.page-menu__logo {
+  display: block;
   order: 1;
 }
 
@@ -127,10 +124,13 @@ ______________________ Планшетная версия ______________________
 
 @media #{$breakpoint-tablet} {
   .page-menu__list {
-    display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
+  }
+
+  .page-menu__list--closed .page-menu__item {
+    display: block;
   }
 
   .page-menu__item {

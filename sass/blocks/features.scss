@@ -15,8 +15,8 @@
 }
 
 .features__wrapper {
-  margin: 0 20px;
-  padding: 25px 5px;
+  padding: 25px;
+  width: 100%;
   text-align: center;
   box-sizing: border-box;
 
@@ -61,7 +61,7 @@
   }
 
   .features__wrapper {
-    margin: 0 10%;
+    padding: 25px 45px;
 
     &--underlined {
       border-bottom: none;

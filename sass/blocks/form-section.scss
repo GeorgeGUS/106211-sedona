@@ -215,7 +215,7 @@
   @include input-font;
   background-color: $theme-color-lightgray;
   border: 0;
-  
+
   &::placeholder {
     @include input-font;
   }

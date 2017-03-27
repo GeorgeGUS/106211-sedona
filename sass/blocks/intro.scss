@@ -1,6 +1,7 @@
 .intro {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(175deg, lighten($theme-color-blue, 15) 0%, $theme-color-blue 100%);
 }
 
 .intro__wrapper {

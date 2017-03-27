@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="common common--outer-shadow">
+
       <header class="page-header">
         <nav class="page-menu page-menu--no-js">
           <ul class="page-menu__list page-menu__list--closed">
@@ -20,8 +21,9 @@
             <li class="page-menu__logo">
               <a href="index.html" class="page-header__logo-link">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                  <img src="img/logo-sedona-tablet.svg" width="100" height="80" alt="City of Sedona">
+                  <source media="(min-width: 1220px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 788px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona">
                 </picture>
               </a>
             </li>
@@ -34,11 +36,6 @@
           </ul>
           <div class="page-menu__btn page-menu__btn--open"></div>
         </nav>
-        <div class="page-header__logo">
-          <a href="index.html" class="page-header__logo-link">
-            <img src="img/logo-sedona-mobile.svg" width="100" height="80" alt="City of Sedona">
-          </a>
-        </div>
       </header>
 
       <section class="intro">
@@ -139,7 +136,7 @@
             </li>
             <li class="form-section__list-item form-section__list-item--4">
               <label class="form-section__label form-section__label--right">
-                <input class="form-section__checkbox" type="checkbox" name="attraction" value="Red Rocks" disabled>
+                <input class="form-section__checkbox" type="checkbox" name="attraction" value="Red Rocks">
                 <span class="form-section__checkbox-btn"></span> Красные скалы </label>
             </li>
           </ul>
@@ -227,6 +224,7 @@
     </div>
 
     <!--________________ Скрипты ________________-->
+    <script src="js/picturefill.min.js"></script>
     <script src="js/page-menu.js"></script>
     <script src="js/form-popup.js"></script>
   </body>

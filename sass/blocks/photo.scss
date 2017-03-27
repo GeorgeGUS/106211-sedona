@@ -1,0 +1,29 @@
+.photo {
+  @include container;
+  background-color: $bg-color;
+}
+
+/*
+______________________ Планшетная версия ______________________
+*/
+
+@media #{$breakpoint-tablet} {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+    box-sizing: border-box;
+  }
+}
+
+/*
+______________________ Десктопная версия ______________________
+*/
+
+@media #{$breakpoint-desktop} {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+}
