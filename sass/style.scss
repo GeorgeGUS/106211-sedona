@@ -7,7 +7,7 @@
 @import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
-@import "global/common.scss";
+@import "blocks/common";
 
 /*_________blocks_________*/
 
@@ -24,10 +24,12 @@
 @import "blocks/contacts.scss";
 
 //----------photo------------
-@import "blocks/photos.scss";
+@import "blocks/photo.scss";
+@import "blocks/photo-item.scss";
 @import "blocks/video.scss";
 @import "blocks/video-player.scss";
 
 //----------form-------------
 @import "blocks/form.scss";
+@import "blocks/form-section.scss";
 @import "blocks/popups.scss";

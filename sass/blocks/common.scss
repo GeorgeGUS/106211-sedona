@@ -1,6 +1,8 @@
-.common__page-shadow {
+.common {
   @include container;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  &--outer-shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .common__text-wrapper {
@@ -46,13 +48,24 @@ a.common__text {
   text-decoration: none;
   hyphens: auto;
   color: white;
-  background: $theme-main-color;
+  background-color: $theme-color-blue;
   border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $theme-color-blue-hover;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $theme-color-blue-active;
+  }
 
   &--social {
     display: inline-block;
     padding: 0;
     font-size: 0;
+    vertical-align: middle;
   }
 }
 

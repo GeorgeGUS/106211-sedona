@@ -1,8 +1,3 @@
-.photos {
-  @include container;
-  background-color: $bg-color;
-}
-
 .photo-item {
   padding: 20px;
   text-align: left;
@@ -18,8 +13,9 @@
 .photo-item__img {
   position: relative;
   width: 100%;
-  min-height: 280px;
+  height: 280px;
   overflow: hidden;
+  background: linear-gradient(320deg, darken($theme-color-lightgray, 15) 0%, $theme-color-lightgray 100%);
 }
 
 .photo-item__img-wrapper {
@@ -53,7 +49,6 @@
 .photo-item__votes {
   min-width: 70px;
   max-width: 40%;
-  overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -64,11 +59,11 @@
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  @include bg-img-center-contain;
-  background-image: url("../img/icon-like.svg");
+  cursor: pointer;
 }
 
 .photo-item__vote-score {
+  display: inline-block;
   vertical-align: middle;
 }
 
@@ -77,13 +72,6 @@ ______________________ Планшетная версия ______________________
 */
 
 @media #{$breakpoint-tablet} {
-  .photos {
-    padding: 20px 60px;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .photo-item {
     display: flex;
     flex-direction: column;
@@ -111,7 +99,7 @@ ______________________ Планшетная версия ______________________
     flex-grow: 1;
     padding: 16px 20px;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: $theme-color-lightgray;
     box-sizing: border-box;
   }
 
@@ -134,12 +122,6 @@ ______________________ Десктопная версия ______________________
 */
 
 @media #{$breakpoint-desktop} {
-  .photos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 0;
-  }
-
   .photo-item {
     position: relative;
     height: 270px;
@@ -165,5 +147,9 @@ ______________________ Десктопная версия ______________________
 
   .photo-item:nth-last-child(2n):not(:first-child) .photo-item__bottom-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-item__vote-icon svg {
+    fill: #ffffff;
   }
 }

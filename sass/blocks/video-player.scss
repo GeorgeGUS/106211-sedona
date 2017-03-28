@@ -8,6 +8,7 @@
   position: relative;
   width: 100%;
   min-height: 200px;
+  background: linear-gradient(135deg, darken($theme-color-lightgray, 5) 0%, darken($theme-color-lightgray, 25) 100%);
 }
 
 .video-player__frame-wrapper img {
@@ -42,7 +43,7 @@
 }
 
 .video-player__volume-slider-knob {
-  display: inline-block;
+  display: block;
   position: absolute;
   top: -3px;
   left: 20%;
@@ -58,24 +59,20 @@
   width: 20px;
   height: 20px;
   font-size: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
   cursor: pointer;
+  fill: #5c6870;
+
+  &:hover svg {
+    fill: #333333;
+  }
+
+  &:active svg {
+    fill: #333333;
+    opacity: 0.3;
+  }
 
   &--replay {
     margin-right: auto;
-    background-image: url("../img/icon-video-replay.svg");
-  }
-
-  &--subtitles {
-    margin-right: 30px;
-    width: 32px;
-    background-image: url("../img/icon-video-subtitles.svg");
-  }
-
-  &--enlarge {
-    margin-left: 0;
-    background-image: url("../img/icon-video-fullscreen.svg");
   }
 }
 
@@ -90,24 +87,14 @@ ______________________ Планшетная версия ______________________
   }
 
   .video-player__frame-wrapper {
-    //position: absolute;
-    min-width: 100%;
+    width: 100%;
     height: 100%;
-    //transform: translateX(-50%);
-  }
 
-  .video-player__frame-wrapper {
-    margin-left: -50%;
-    width: auto;
-    height: 100%;
-    transform: translateX(25%);
   }
 
   .video-player__frame-wrapper img {
-    margin-left: -50%;
     width: auto;
     height: 100%;
-    transform: translateX(25%);
   }
 
 
@@ -132,8 +119,18 @@ ______________________ Планшетная версия ______________________
 
   .video-player__control-btn {
     margin: 35px 40px;
+    fill: rgba(255, 255, 255, 0.8);
+
+    &:hover svg {
+      fill: #ffffff;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
 
     &--replay {
+      margin-right: 40px;
       order: -1;
     }
 
@@ -151,6 +148,6 @@ ______________________ Планшетная версия ______________________
 ______________________ Десктопная версия ______________________
 */
 
-.video-player__frame > img {
+.video-player__frame {
   width: 100%;
 }

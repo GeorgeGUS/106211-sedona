@@ -1,17 +1,44 @@
 .page-header {
   position: relative;
   @include container;
-  text-align: center;
-  background-color: white;
+  background-color: $bg-color;
+
 }
 
-.page-header__wrapper {
+.page-header__logo-wrapper {
   position: relative;
-  min-height: 55px;
 }
 
 .page-header__logo {
+  display: block;
   margin: 0 auto;
   width: 100px;
-  height: 55px;
+}
+
+.page-header__logo-link img,
+.page-header__logo img {
+  width: 100px;
+  height: 80px;
+  margin-bottom: -25px; // это явно не хорошо, надо как-то переделать
+}
+
+.page-header__logo-link {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+@media #{$breakpoint-tablet} {
+  .page-header__logo {
+    display: none;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .page-header__logo-link img,
+  .page-header__logo img {
+    width: 190px;
+    height: 100px;
+    margin-bottom: -45px; // это явно не хорошо, надо как-то переделать
+  }
 }

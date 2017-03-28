@@ -1,12 +1,14 @@
-$theme-main-color: #81b3d2;
 $bg-color: #ffffff;
-$input-color: #f2f2f2;
+$theme-color-blue: #81b3d2;
+$theme-color-blue-hover: #669ec0;
+$theme-color-blue-active: #5496bd;
+$theme-color-lightgray: #f2f2f2;
 $input-checked-color: #333333;
 
 
-$tablet-width: 768px; // по макету
-//$tablet-width: 700px; // альтернатива, выглядит лучше
+$tablet-width: 768px;
 $desktop-width: 1200px;
-$scroll-width: 20px;
-$breakpoint-tablet: (min-width: $tablet-width + $scroll-width);
-$breakpoint-desktop: (min-width: $desktop-width + $scroll-width);
+$v-scroll-width: 20px;
+$breakpoint-tablet: (min-width: $tablet-width + $v-scroll-width);
+$breakpoint-desktop: (min-width: $desktop-width + $v-scroll-width);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
