@@ -7,11 +7,11 @@
 @import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
-@import "blocks/common";
 
 /*_________blocks_________*/
 
 //----common for all pages----
+@import "blocks/common.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-menu.scss";
 @import "blocks/page-description.scss";

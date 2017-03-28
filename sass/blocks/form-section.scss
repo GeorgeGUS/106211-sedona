@@ -1,7 +1,6 @@
 .form-section {
   margin: 0;
-  padding: 20px;
-  padding-bottom: 30px;
+  padding: 20px 20px 30px;
   border: none;
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box;
@@ -231,9 +230,7 @@
   }
 }
 
-/*
-______________________ Планшетная версия ______________________
-*/
+//______________________ Планшетная версия ______________________
 
 @media #{$breakpoint-tablet} {
   .form-section {
@@ -327,9 +324,7 @@ ______________________ Планшетная версия ______________________
   }
 }
 
-/*
-______________________ Десктопная версия ______________________
-*/
+//______________________ Десктопная версия ______________________
 
 @media #{$breakpoint-desktop} {
   .form-section--first .form-section__title {

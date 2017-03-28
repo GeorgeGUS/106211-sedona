@@ -47,6 +47,8 @@
   opacity: 0.3;
 }
 
+//______________________ Планшетная версия ______________________
+
 @media #{$breakpoint-tablet} {
   .page-footer {
     flex-direction: row;
@@ -60,6 +62,8 @@
     padding: 40px 0;
   }
 }
+
+//______________________ Десктопная версия ______________________
 
 @media #{$breakpoint-desktop} {
   .page-footer {
