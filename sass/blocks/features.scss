@@ -34,6 +34,8 @@
   @include bg-img-center-cover;
 }
 
+//______________________ Планшетная версия ______________________
+
 @media #{$breakpoint-tablet} {
   .features {
     display: flex;
@@ -73,6 +75,10 @@
     width: 100%;
   }
 }
+
+
+//______________________ Версии для картинок ______________________
+
 
 @media (max-width: 320px) {
   .features__image {
