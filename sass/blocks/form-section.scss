@@ -110,12 +110,12 @@
 
 
   &--phone {
-    background-image: url("../img/icon-phone.svg");
+    background-image: url("../img/icons/icon-phone.svg");
     background-size: 18px;
   }
 
   &--mail {
-    background-image: url("../img/icon-mail.svg");
+    background-image: url("../img/icons/icon-mail.svg");
     background-size: 16px;
   }
 }
@@ -199,7 +199,7 @@
   width: 20px;
   height: 20px;
   @include bg-img-center-contain;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/icons/icon-tick.svg");
 }
 
 .form-section__label--right:active .form-section__radio-btn::after,

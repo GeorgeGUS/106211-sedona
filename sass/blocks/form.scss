@@ -9,12 +9,13 @@
 .form__submit {
   display: flex;
   align-items: center;
+  padding: 0 20px;
   width: 100%;
   border-top: none;
 }
 
 .form__submit-btn {
-  width: 100%;
+  flex-grow: 1;
 
   &:disabled {
     background-color: darken($theme-color-lightgray, 5);
@@ -32,6 +33,10 @@ ______________________ Планшетная версия ______________________
 @media #{$breakpoint-tablet} {
   .form {
     padding: 0 60px;
+  }
+
+  .form__submit {
+    padding: 0;
   }
 
   .form__submit-btn {

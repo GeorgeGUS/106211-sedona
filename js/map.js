@@ -7,7 +7,7 @@ function initMap() {
   });
 
   var image = {
-    url: './img/icon-map-marker.svg',
+    url: 'img/icons/icon-map-marker.svg',
     scaledSize: new google.maps.Size(27, 27)
   };
   var beachMarker = new google.maps.Marker({
