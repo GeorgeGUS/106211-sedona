@@ -20,17 +20,13 @@
   display: none;
 }
 
-.page-menu__logo {
-  display: block;
-  order: 1;
-}
-
 .page-menu__item-link {
   display: block;
   padding: 7px 0;
   @include theme-text;
-  font-weight: bold;
+  font-size: 18px;
   line-height: 40px;
+  font-weight: bold;
   text-decoration: none;
   color: white;
   background-color: $theme-color-blue;
@@ -45,11 +41,11 @@
 }
 
 .page-menu__item:not(:first-of-type) .page-menu__item-link {
-  box-shadow: inset 0 1px lighten($theme-color-blue, 10);
+  border-top: 1px solid lighten($theme-color-blue, 10);
 
   &[href]:hover,
   &[href]:active {
-    box-shadow: none;
+    border-top: 1px solid $theme-color-blue;
   }
 }
 
@@ -64,9 +60,26 @@
 
 .page-menu__item:last-of-type .page-menu__item-link {
   border-bottom: 1px solid $theme-color-blue;
-  box-shadow:
-    inset 0 1px lighten($theme-color-blue, 10),
-    inset 0 -7px 14px -7px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -7px 14px -7px rgba(0, 0, 0, 0.2);
+}
+
+.page-menu__logo {
+  display: block;
+  width: 100%;
+  order: 1;
+}
+
+.page-menu__logo-link {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.page-menu__logo-link img {
+  width: 102px;
+  height: 84px;
+  margin-bottom: -28px;
+  vertical-align: top;
 }
 
 .page-menu__btn {
@@ -183,5 +196,15 @@
 
   .page-menu__btn {
     display: none;
+  }
+}
+
+//______________________ Десктопная версия ______________________
+
+@media #{$breakpoint-desktop} {
+  .page-menu__logo-link img {
+    width: 190px;
+    height: 100px;
+    margin-bottom: -45px;
   }
 }

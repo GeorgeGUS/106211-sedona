@@ -1,5 +1,6 @@
 .common {
   @include container;
+
   &--outer-shadow {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
@@ -15,7 +16,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  text-decoration: none;
+
+  &--big {
+    font-size: 21px;
+  }
 
   &--small {
     font-size: 14px;
@@ -30,10 +34,11 @@
   @include theme-text;
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
 }
 
-a.common__title,
-a.common__text {
+.common__title,
+.common__text {
   text-decoration: none;
   color: black;
 }
@@ -43,8 +48,8 @@ a.common__text {
   padding: 16px;
   @include theme-text;
   font-size: 21px;
-  font-weight: bold;
   line-height: 26px;
+  font-weight: bold;
   text-decoration: none;
   hyphens: auto;
   color: white;
@@ -62,10 +67,8 @@ a.common__text {
   }
 
   &--social {
-    display: inline-block;
     padding: 0;
     font-size: 0;
-    vertical-align: middle;
   }
 }
 
@@ -76,7 +79,6 @@ a.common__text {
     font-size: 21px;
 
     &--big {
-      padding-bottom: 10px;
       font-size: 30px;
     }
   }

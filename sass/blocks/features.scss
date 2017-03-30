@@ -11,18 +11,28 @@
   &--full {
     color: white;
     background-color: $theme-color-blue;
+    border-bottom: 1px solid inherit;
   }
 }
 
 .features__wrapper {
   padding: 25px;
-  width: 100%;
   text-align: center;
-  box-sizing: border-box;
+  //box-sizing: border-box;
 
-  &--underlined {
+  &--short {
+    margin: 0 20px;
+    padding: 12px;
     border-bottom: 1px solid #d6d6d6;
   }
+}
+
+.features__title {
+  margin: 0.8em;
+}
+
+.features__wrapper--short .features__title {
+  margin: 0.85em;
 }
 
 .features__number {
@@ -30,8 +40,9 @@
 }
 
 .features__image {
-  min-height: 300px;
+  min-height: 260px;
   @include bg-img-center-cover;
+  background-color: #888888;
 }
 
 //______________________ Планшетная версия ______________________
@@ -65,7 +76,8 @@
   .features__wrapper {
     padding: 25px 45px;
 
-    &--underlined {
+    &--short {
+      margin: 0;
       border-bottom: none;
     }
   }

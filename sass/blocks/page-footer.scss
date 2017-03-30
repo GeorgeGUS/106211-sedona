@@ -7,19 +7,23 @@
 }
 
 .page-footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
 .page-footer__hashtag-link {
   font-size: 21px;
+  line-height: 1rem;
 }
 
 .page-footer__social-link {
-  margin: 0 4px;
+  margin: 2px 3px;
   font-size: 0;
-  height: 45px;
-  width: 45px;
-  display: inline-flex;
+  width: 46px;
+  height: 47px;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -34,8 +38,9 @@
 
 .page-footer__copy-icon {
   display: inline-block;
+  margin-left: 8px;
   width: 27px;
-  height: 40px;
+  height: 35px;
   vertical-align: middle;
 }
 

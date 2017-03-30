@@ -8,9 +8,17 @@
   background-color: $bg-color;
 }
 
+.contacts__title {
+  line-height: 1.4em;
+}
+
+.contacts__text {
+  line-height: 1.5rem;
+}
+
 .contacts__btn {
   margin-top: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .contacts__map {
