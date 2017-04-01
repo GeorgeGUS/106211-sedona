@@ -1,4 +1,5 @@
 .photo {
+  margin-top: 10px;
   @include container;
   background-color: $bg-color;
 }

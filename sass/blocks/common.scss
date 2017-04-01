@@ -1,5 +1,6 @@
 .common {
   @include container;
+  background: $bg-color;
 
   &--outer-shadow {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -12,6 +13,7 @@
 }
 
 .common__title {
+  margin: 0.7em auto;
   @include theme-text;
   font-size: 18px;
   line-height: 26px;
@@ -31,6 +33,7 @@
 }
 
 .common__text {
+  margin: 1em auto;
   @include theme-text;
   font-size: 14px;
   line-height: 21px;
@@ -40,7 +43,6 @@
 .common__title,
 .common__text {
   text-decoration: none;
-  color: black;
 }
 
 .common__btn {

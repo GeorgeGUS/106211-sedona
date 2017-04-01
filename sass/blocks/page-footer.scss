@@ -10,16 +10,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 19.35px;
 }
 
 .page-footer__hashtag-link {
+  margin: 0;
   font-size: 21px;
   line-height: 1rem;
+  color: #000;
 }
 
 .page-footer__social-link {
-  margin: 2px 3px;
+  margin: 3px;
   font-size: 0;
   width: 46px;
   height: 47px;
@@ -34,6 +36,11 @@
 
 .page-footer__social-link svg {
   fill: white;
+}
+
+.page-footer__copy-link {
+  margin: 0;
+  color: #000;
 }
 
 .page-footer__copy-icon {

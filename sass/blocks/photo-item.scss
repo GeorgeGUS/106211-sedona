@@ -1,5 +1,6 @@
 .photo-item {
   padding: 20px;
+  padding-bottom: 5px;
   text-align: left;
   line-height: 24px;
   border-top: 1px solid #e5e5e5;
@@ -11,6 +12,7 @@
 }
 
 .photo-item__img {
+  margin: 3.5px auto;
   position: relative;
   width: 100%;
   height: 280px;
@@ -42,7 +44,12 @@
   margin-right: 15px;
 }
 
+.photo-item__title {
+  margin-bottom: 0;
+}
+
 .photo-item__author {
+  margin: 0;
   text-transform: none;
 }
 
@@ -55,7 +62,7 @@
 
 .photo-item__vote-icon {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
   width: 24px;
   height: 24px;
   vertical-align: middle;

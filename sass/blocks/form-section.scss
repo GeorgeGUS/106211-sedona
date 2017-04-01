@@ -1,10 +1,18 @@
 .form-section {
   margin: 0;
-  padding: 20px 20px 30px;
+  padding: 10px 20px 28px;
   border: none;
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box;
   width: 100%;
+
+  &--half {
+    padding-bottom: 15px;
+  }
+
+  &--checkboxes {
+    padding-bottom: 5px;
+  }
 }
 
 
@@ -15,7 +23,8 @@
 
 .form-section__title {
   text-align: center;
-  margin-top: 0;
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 
 .form-section__wrapper {
@@ -41,10 +50,22 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  &--radio {
+    margin: 11px auto 2px;
+  }
+
+  &--radio:last-child {
+    margin-bottom: 13px;
+  }
+
+  &--check {
+    margin: 4px auto 20px;
+  }
 }
 
 .form-section__label-text {
-  margin: 5px 20px;
+  margin: 10px 20px 5px;
   line-height: 26px;
   text-align: left;
 
@@ -56,7 +77,7 @@
 .form-section__input {
   display: block;
   margin-left: 15px;
-  padding: 15px 20px;
+  padding: 16px 20px;
   flex-grow: 1;
   width: 130px;
   min-height: 56px;
@@ -123,6 +144,7 @@
 .form-section__wrong-value {
   display: block;
   margin: 5px 20px;
+  line-height: 24px;
   text-transform: none;
   color: #ff5c5c;
 
@@ -160,8 +182,8 @@
   justify-content: center;
   align-items: center;
   margin-right: 25px;
-  width: 55px;
-  height: 55px;
+  width: 56px;
+  height: 56px;
   background-color: $theme-color-lightgray;
 }
 
@@ -186,8 +208,8 @@
 .form-section__radio:checked ~ .form-section__radio-btn::after {
   display: block;
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background-color: $input-checked-color;
   border-radius: 50%;
 }
@@ -195,8 +217,8 @@
 .form-section__checkbox:checked ~ .form-section__checkbox-btn::after {
   display: block;
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   @include bg-img-center-contain;
   background-image: url("../img/icons/icon-tick.svg");
 }
@@ -208,6 +230,7 @@
 
 .form-section__textarea {
   flex-grow: 1;
+  margin: 5px auto 3px;
   padding: 15px 20px;
   width: 100%;
   resize: none;
