@@ -1,8 +1,8 @@
 .common {
-  @include container;
   background: $bg-color;
 
   &--outer-shadow {
+    @include container;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 }
@@ -19,10 +19,6 @@
   line-height: 26px;
   font-weight: bold;
 
-  &--big {
-    font-size: 21px;
-  }
-
   &--small {
     font-size: 14px;
   }
@@ -30,6 +26,10 @@
   &--thin {
     font-weight: normal;
   }
+}
+
+.common__line-break {
+  display: none;
 }
 
 .common__text {
@@ -83,6 +83,10 @@
     &--big {
       font-size: 30px;
     }
+  }
+
+  .common__line-break {
+    display: inline;
   }
 
   .common__text {

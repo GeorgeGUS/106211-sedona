@@ -1,14 +1,13 @@
 .page-description {
   @include container;
   position: relative;
-  padding: 20px;
-  padding-bottom: 1px;
+  padding: 23px 20px 3px;
   line-height: 26px;
   background-color: $bg-color;
   box-sizing: border-box;
 
   &--index {
-    padding-bottom: 28px;
+    padding-bottom: 26px;
   }
 
   &--index::after {
@@ -23,8 +22,8 @@
     background: $theme-color-blue url("../img/bg-triangle.svg") no-repeat center bottom;
   }
 }
+
 .page-description__title {
-  margin: 18px auto;
   padding: 0 10px;
 }
 
@@ -48,28 +47,59 @@
 
 @media #{$breakpoint-tablet} {
   .page-description {
-    padding-top: 80px;
-    padding-bottom: 35px;
+    padding-top: 55px;
+    padding-bottom: 23px;
 
     &--index {
-      padding-bottom: 35px;
+      padding-top: 30px;
+      padding-bottom: 17px;
     }
 
     &--index::after {
       display: none;
     }
-    .page-description__title {
-      padding-bottom: 5px;
+  }
+
+  .page-description__title {
+    margin: 20px auto;
+  }
+
+  .page-description--index .page-description__title {
+    padding: 0 10px;
+    letter-spacing: 0.15px;
+  }
+
+  .page-description__text {
+    margin: 30px auto 33px;
+    padding: 0;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+  }
+
+  .page-description--index .page-description__text {
+    margin-top: 30px;
+  }
+}
+
+//______________________ Десктопная версия ______________________
+
+@media #{$breakpoint-desktop} {
+  .page-description {
+    padding-top: 95px;
+    padding-bottom: 23px;
+
+    &--index {
+      padding-top: 30px;
+      padding-bottom: 33px;
     }
   }
 
-  .page-description__text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
+  .page-description__title {
+    margin: 17px auto;
+    padding-bottom: 5px;
   }
 
   .page-description__text {
-    line-height: 24px;
+    margin: 25px auto 17px;
   }
 }

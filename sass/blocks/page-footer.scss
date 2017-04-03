@@ -71,7 +71,11 @@
   }
 
   .page-footer__item {
-    padding: 40px 0;
+    padding: 33px 0;
+  }
+
+  .page-footer__social-link:last-child {
+    margin-right: 13px;
   }
 }
 
@@ -80,5 +84,15 @@
 @media #{$breakpoint-desktop} {
   .page-footer {
     padding: 0 120px;
+  }
+
+  .page-footer__hashtag-link {
+    margin-left: 12px;
+    margin-right: -12px;
+  }
+
+  .page-footer__copy-link--right {
+    margin-left: 75px;
+    margin-right: -75px;
   }
 }

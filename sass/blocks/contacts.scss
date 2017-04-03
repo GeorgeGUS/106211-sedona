@@ -10,6 +10,7 @@
 
 .contacts__title {
   margin: 18px auto;
+  font-size: 21px;
 }
 
 .contacts__text {
@@ -48,8 +49,26 @@
 //______________________ Планшетная версия ______________________
 
 @media #{$breakpoint-tablet} {
+  .contacts__wrapper {
+    padding-top: 38px;
+  }
+
   .contacts__title {
     font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__btn {
+    margin: 41px 21px 48px;
+  }
+}
+
+
+//______________________ Десктопная версия ______________________
+
+@media #{$breakpoint-desktop} {
+  .contacts__btn {
+    margin: 49px 21px 56px;
   }
 }
 

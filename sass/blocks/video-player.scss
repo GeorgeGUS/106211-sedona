@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 788px) {
+@media (min-width: 321px) and (max-width: 783px) {
   .video-player__frame {
     background-image: url("../img/video-tablet@1x.jpg");
 
@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: 789px) {
+@media (min-width: 784px) {
   .video-player__frame {
     background-image: url("../img/video-desktop@1x.jpg");
 
@@ -82,7 +82,7 @@
   display: block;
   position: absolute;
   top: -3px;
-  left: 20%;
+  left: 15%;
   transform: translateX(-50%);
   border: 4.5px solid white;
   border-radius: 50%;
@@ -116,6 +116,7 @@
 
 @media #{$breakpoint-tablet} {
   .video-player__frame {
+    width: 100%;
     height: 500px;
     overflow: hidden;
   }
@@ -140,7 +141,7 @@
   }
 
   .video-player__control-btn {
-    margin: 35px 40px;
+    margin: 38px 40px;
     fill: rgba(255, 255, 255, 0.8);
 
     &:hover svg {
@@ -152,22 +153,28 @@
     }
 
     &--replay {
-      margin-right: 40px;
+      margin: 38px 40px 38px 33px;
       order: -1;
     }
 
     &--subtitles {
-      margin-right: 30px;
+      margin-right: 44px;
     }
 
     &--enlarge {
       margin-left: 0;
     }
   }
+
+  .video-player__volume-slider-knob {
+    left: 30%;
+  }
 }
 
 //______________________ Десктопная версия ______________________
 
-.video-player__frame {
-  width: 100%;
+@media #{$breakpoint-tablet} {
+  .video-player__volume-slider-knob {
+    left: 22%;
+  }
 }

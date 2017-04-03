@@ -54,7 +54,7 @@
 }
 
 .photo-item__votes {
-  min-width: 70px;
+  min-width: 65px;
   max-width: 40%;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -93,6 +93,11 @@
     }
   }
 
+  .photo-item__img {
+    margin: 0 auto;
+    height: 268px;
+  }
+
   .photo-item--big .photo-item__img {
     height: 400px;
   }
@@ -119,6 +124,10 @@
     padding: 0;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .photo-item__vote-icon {
+    margin-right: 5px;
   }
 }
 

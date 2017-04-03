@@ -9,7 +9,7 @@ $input-checked-color: #333333;
 //-------------dimensions---------------
 $tablet-width: 768px;
 $desktop-width: 1200px;
-$scroll-width: 20px;
+$scroll-width: 15px;
 $breakpoint-tablet: (min-width: $tablet-width + $scroll-width);
 $breakpoint-desktop: (min-width: $desktop-width + $scroll-width);
 $retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);

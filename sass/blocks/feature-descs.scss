@@ -37,7 +37,6 @@
 }
 
 .feature-descs__item-text {
-  //margin-bottom: 25px;
   margin: 0;
 }
 
@@ -54,11 +53,15 @@
   .feature-descs__item {
     flex-grow: 1;
     width: 100%;
-    padding: 135px 45px 0;
+    padding: 145px 45px 45px;
 
     &:nth-child(2) {
       order: 1;
     }
+  }
+
+  .feature-descs__item-title {
+    margin-bottom: 20px;
   }
 
   .feature-descs__item-title::before {
@@ -67,5 +70,9 @@
     width: 75px;
     height: 75px;
     transform: translateX(-50%);
+  }
+
+  .feature-descs__item-text {
+    line-height: 21px;
   }
 }
