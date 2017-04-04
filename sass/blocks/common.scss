@@ -1,6 +1,8 @@
 .common {
-  @include container;
+  background: $bg-color;
+
   &--outer-shadow {
+    @include container;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 }
@@ -11,11 +13,11 @@
 }
 
 .common__title {
+  margin: 0.7em auto;
   @include theme-text;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  text-decoration: none;
 
   &--small {
     font-size: 14px;
@@ -26,16 +28,21 @@
   }
 }
 
+.common__line-break {
+  display: none;
+}
+
 .common__text {
+  margin: 1em auto;
   @include theme-text;
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
 }
 
-a.common__title,
-a.common__text {
+.common__title,
+.common__text {
   text-decoration: none;
-  color: black;
 }
 
 .common__btn {
@@ -43,8 +50,8 @@ a.common__text {
   padding: 16px;
   @include theme-text;
   font-size: 21px;
-  font-weight: bold;
   line-height: 26px;
+  font-weight: bold;
   text-decoration: none;
   hyphens: auto;
   color: white;
@@ -62,10 +69,8 @@ a.common__text {
   }
 
   &--social {
-    display: inline-block;
     padding: 0;
     font-size: 0;
-    vertical-align: middle;
   }
 }
 
@@ -76,9 +81,12 @@ a.common__text {
     font-size: 21px;
 
     &--big {
-      padding-bottom: 10px;
       font-size: 30px;
     }
+  }
+
+  .common__line-break {
+    display: inline;
   }
 
   .common__text {

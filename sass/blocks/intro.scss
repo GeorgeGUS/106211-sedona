@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(175deg, lighten($theme-color-blue, 15) 0%, $theme-color-blue 100%);
+  background-color: #979c9f;
 }
 
 .intro__wrapper {
@@ -16,28 +16,27 @@
   background-image:
     url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
-  background-size: 100% 27px, cover;
+  background-size: 100% 27px, auto;
 
   @media #{$retina} {
     background-image:
       url("../img/bg-intro-triangle-mobile.svg"),
       url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100% 27px, cover;
+    background-size: 100% 27px, auto;
   }
 
   &--big {
-    min-height: 390px;
+    min-height: 389px;
   }
 }
 
 .intro__logo {
-  min-width: 230px;
-  width: 50%;
-  max-width: 460px;
-  min-height: 50px;
+  width: 230px;
+  height: 57px;
 
   &--index {
-    min-width: 282px;
+    width: 282px;
+    height: 210px;
   }
 }
 
@@ -45,20 +44,50 @@
 
 @media #{$breakpoint-tablet} {
   .intro__wrapper {
-    min-height: 300px;
+    min-height: 290px;
 
     background-image: url("../img/bg-intro-triangle-desktop.svg"),
       url("../img/bg-back-desktop@1x.jpg");
-    background-size: 1201px 57px, cover;
+    background-size: 1201px 57px, auto;
 
     @media #{$retina} {
       background-image: url("../img/bg-intro-triangle-desktop.svg"),
         url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1201px 57px, cover;
+      background-size: 1201px 57px, auto;
     }
 
     &--big {
-      min-height: 520px;
+      min-height: 518px;
+    }
+  }
+
+  .intro__logo {
+    width: 460px;
+    height: 100px;
+
+    &--index {
+      width: 460px;
+      height: 362px;
+    }
+  }
+}
+
+//______________________ Десктопная версия ______________________
+
+@media #{$breakpoint-desktop} {
+  .intro__wrapper {
+    min-height: 302px;
+
+    &--big {
+      min-height: 518px;
+    }
+  }
+
+  .intro__logo {
+    height: 98px;
+
+    &--index {
+      height: 362px;
     }
   }
 }

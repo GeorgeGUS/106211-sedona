@@ -9,13 +9,14 @@
 .form__submit {
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
   width: 100%;
   border-top: none;
 }
 
 .form__submit-btn {
   flex-grow: 1;
+  margin-bottom: 18px;
 
   &:disabled {
     background-color: darken($theme-color-lightgray, 5);
@@ -30,14 +31,16 @@
 
 @media #{$breakpoint-tablet} {
   .form {
-    padding: 0 60px;
+    padding: 20px 60px;
   }
 
   .form__submit {
+    margin-bottom: 40px;
     padding: 0;
   }
 
   .form__submit-btn {
+    margin-bottom: 0;
     width: 50%;
   }
 
@@ -52,6 +55,10 @@
 
 @media #{$breakpoint-desktop} {
   .form {
-    padding: 0 120px;
+    padding: 20px 120px;
+  }
+
+  .form__submit {
+    margin-bottom: 45px;
   }
 }

@@ -7,19 +7,25 @@
 }
 
 .page-footer__item {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19.35px;
 }
 
 .page-footer__hashtag-link {
+  margin: 0;
   font-size: 21px;
+  line-height: 1rem;
+  color: #000;
 }
 
 .page-footer__social-link {
-  margin: 0 4px;
+  margin: 3px;
   font-size: 0;
-  height: 45px;
-  width: 45px;
-  display: inline-flex;
+  width: 46px;
+  height: 47px;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -32,10 +38,16 @@
   fill: white;
 }
 
+.page-footer__copy-link {
+  margin: 0;
+  color: #000;
+}
+
 .page-footer__copy-icon {
   display: inline-block;
+  margin-left: 8px;
   width: 27px;
-  height: 40px;
+  height: 35px;
   vertical-align: middle;
 }
 
@@ -59,7 +71,11 @@
   }
 
   .page-footer__item {
-    padding: 40px 0;
+    padding: 33px 0;
+  }
+
+  .page-footer__social-link:last-child {
+    margin-right: 13px;
   }
 }
 
@@ -68,5 +84,15 @@
 @media #{$breakpoint-desktop} {
   .page-footer {
     padding: 0 120px;
+  }
+
+  .page-footer__hashtag-link {
+    margin-left: 12px;
+    margin-right: -12px;
+  }
+
+  .page-footer__copy-link--right {
+    margin-left: 75px;
+    margin-right: -75px;
   }
 }
